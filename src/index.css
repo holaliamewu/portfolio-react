@@ -1,0 +1,42 @@
+*{
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: lightblue;
+  background: #141433;
+  min-width: 320px;
+  height: 100vh;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+#navs-container{
+  color: lightseagreen;
+  display: flex;
+  gap: 15px;
+  font-weight: 600;
+  height: 23px;
+}
+
+.navs:hover{
+  cursor: pointer;
+  border-bottom: 2px solid lightseagreen;
+}
+
+footer{
+  width: 100vw;
+  height: fit-content;
+  padding: 5px;
+  text-align: center;
+}
