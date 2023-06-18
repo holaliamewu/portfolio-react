@@ -65,13 +65,6 @@ main{
   line-height: 0.9;
 }
 
-#my-photo{
-  display: block;
-  width: 350px;
-  border-radius: 20px;
-  margin: auto;
-}
-
 #about{
   width: 95vw;
   margin: 70px auto ;
@@ -85,7 +78,7 @@ main{
 .role,
 .name{
   position: relative;
-  left: 0;
+  left: 50px;
   font-size: 4.5em;
   font-weight: 800;
   width: 410px;
@@ -97,12 +90,16 @@ main{
   color: lightblue
 }
 
-#my-photo{
+#photo{
   display: none;
-  margin-bottom: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
 }
 
 #reach-out{
+  display: none;
   list-style: none;
   text-decoration: none;
   color: darkblue;
@@ -124,11 +121,17 @@ main{
   text-align: center;
 }
 
+#about-text {
+  margin: auto;
+  width: fit-content;
+}
+
 #about-text > p{
   font-size: 16.5px;
   margin-bottom: 15px;
   line-height: 1.25;
-  font-weight: 600;
+  font-weight: 700;
+  max-width:600px;
 }
 
 bold{
@@ -148,6 +151,20 @@ footer{
   text-align: center;
 }
 
+#resume {
+  color: rgb(0, 162, 255);
+  transition: all 1s;
+  margin: 20px 0;
+  display: block;
+  text-align: center;
+  width: 50vh;
+  margin: auto;
+
+}
+
+#resume:hover {
+  color: lightblue;
+}
 
 #contact > a {
   display: block;
@@ -230,4 +247,50 @@ cite{
   display: block;
   font-weight: 500;
   margin: 20px auto 10px auto;
+}
+
+#tech-section {
+  text-align: center;
+  margin-top: 90px;
+  background: #070720;
+  width: fit-content;
+  margin: 70px auto;
+  padding: 20px 50px;
+  border-radius: 7px;
+}
+
+#tech-section > h4 {
+  margin-bottom: 10px;
+}
+
+#techstack-container {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+#techstack-container > :nth-child(1),
+#techstack-container > :nth-child(2),
+#techstack-container > :nth-child(3),
+#techstack-container > :nth-child(4) {
+  margin: 4px;
+  font-size: 1.6em;
+  transition: all 1s;
+}
+
+#techstack-container > :nth-child(1):hover,
+#techstack-container > :nth-child(2):hover,
+#techstack-container > :nth-child(3):hover,
+#techstack-container > :nth-child(4):hover {
+  color: lightblue;
+  cursor: pointer;
+
+}
+
+@media (min-width : 650px) {
+  #photo {
+    position: relative;
+    left: 70vw;
+    top: 10vh;
+    width: 100px;
+  }
 }

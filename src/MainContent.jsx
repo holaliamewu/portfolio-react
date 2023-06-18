@@ -1,6 +1,8 @@
 import {useEffect, useRef, useState} from "react"
 import About from './About.jsx'
 import Pimg1 from '/public/umo-08-06.png'
+import myPic from '/public/myPic.jpg'
+
 export default function MainContent() {
     useEffect(()=> {
         const Observer = new IntersectionObserver((entries) => {
@@ -15,13 +17,28 @@ export default function MainContent() {
 
         const hiddenElements = document.querySelectorAll('.hidden')
         hiddenElements.forEach((el) => Observer.observe(el))
+        
+        
+        const Observer1 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add("show1")
+                } else {
+                    entry.target.classList.remove('show1')
+                }
+            })
+        })
+
+        const hiddenElements1 = document.querySelectorAll('.hidden1')
+        hiddenElements.forEach((el) => Observer1.observe(el))
     },[])
 
     return(
         <main>
             <div id="first-text">
-                <h1 className="hidden name">Amewu Emmanuel Mensah.</h1><br/>
-                <h1 className="hidden role">Frontend Developer.</h1>
+            <h1 className="hidden name">Amewu Emmanuel Mensah.</h1><br/>
+            <h1 className="hidden role">Frontend Developer.</h1>
+            <img id='photo' src={myPic} alt='my-photo' />
             </div>
             <About />
             <h3 className="hidden" id="projects-hd">SOME OF MY PROJECTS</h3>
