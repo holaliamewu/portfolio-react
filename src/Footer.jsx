@@ -7,12 +7,12 @@ export default function Footer() {
         <footer>
             <Contact />
             <div id="icons-container">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
+            <a href="https://www.twitter.com/amewuholali" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i target="_blank" class="fa-brands fa-instagram"></i></a>
+            <a href=""><i target="_blank" class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i target="_blank" class="fa-brands fa-github"></i></a>
              </div>
-             <cite>Designed and built by holali.a</cite>
+             <cite>Designed and Built by holali.a</cite>
         </footer>
     )
 }
