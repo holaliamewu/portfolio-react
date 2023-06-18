@@ -7,10 +7,10 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: lightblue;
+  color: rgba(173, 216, 230, 0.623);
   background: #141433;
   min-width: 320px;
-  height: 100vh;
+  height: fit-content;
 }
 
 header{
@@ -18,20 +18,77 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  width: 95vw;
+  margin: auto;
+  height: 60px;
 }
 
 #navs-container{
   color: lightseagreen;
   display: flex;
-  gap: 15px;
   font-weight: 600;
+  font-size: 0.8em;
   height: 23px;
 }
 
 .navs:hover{
   cursor: pointer;
-  border-bottom: 2px solid lightseagreen;
+  border-bottom: 2px solid rgb(46, 204, 196);
+}
+
+main{
+  width: 100%;
+  height: fit-content;
+}
+
+#my-photo{
+  display: block;
+  width: 350px;
+  border-radius: 20px;
+  margin: auto;
+}
+
+#about{
+  width: 90vw;
+  margin: 70px auto ;
+  padding: 0 70px;
+}
+
+#my-photo{
+  margin-bottom: 50px;
+}
+
+#reach-out{
+  list-style: none;
+  text-decoration: none;
+  color: darkblue;
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 3px 13px;
+  font-size: 0.7em;
+  font-weight: 700;
+  position: fixed;
+  bottom: 10px;
+  right: 8px;
+  text-align: center;
+  text-transform:uppercase;
+}
+
+#about-hd{
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#about-text > p{
+  font-size: 14.5px;
+  margin-bottom: 15px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+bold{
+  color: rgb(173, 216, 230);
+  font-weight: 700;
 }
 
 footer{
@@ -39,4 +96,93 @@ footer{
   height: fit-content;
   padding: 5px;
   text-align: center;
+}
+
+
+#contact > button {
+  display: block;
+  margin: 0 auto 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  padding:  5px 15px;
+  font-weight: 500;
+  border: 1px solid lightblue;
+  background:transparent;
+  color: lightblue;
+  border-radius: 4.5px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#contact > button:hover{
+  transform: translate(-3px);
+  box-shadow: 5px 7px 0 #070720; 
+}
+
+#contact > button:active{
+  box-shadow: none;
+  transform: translate(0px);
+}
+
+
+#icons-container{ 
+  font-size: 1.5em;
+  margin: auto;
+  width: 300px;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#side-text-one{
+  position:absolute;
+  transform: rotate(270deg);
+  left: -100px;
+  top: 200px;
+  font-size: 1.1em;
+}
+
+#one-line{
+  position: absolute;
+  width: 250px;
+  left: -14.8vw; 
+  top: 320px;
+  transform: rotate(270deg);
+  color: red;
+}
+
+#side-text-two{
+  position:absolute;
+  transform: rotate(90deg);
+  left: -45px;
+  top: 390px;
+  font-size: 1.1em;
+}
+
+.project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 85vw;
+  margin: 30px auto;
+  background: #070720;
+  padding: 40px;
+}
+
+.project > img{
+  width: 500px;
+  border-radius: 3px;
+}
+
+.project > p{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+cite{
+  font-size: 12px;
 }

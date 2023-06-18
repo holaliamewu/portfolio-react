@@ -1,13 +1,18 @@
 import React from "react"
+import Contact from './Contact'
 
 export default function Footer() {
+ 
     return(
         <footer>
-            <h4 id="gmail">icon: me.amewu@gmail.com</h4>
+            <Contact />
             <div id="icons-container">
-             contact icons here
-             <cite>made by holali.a</cite>
-            </div>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+             </div>
+             <cite>Designed and built by holali.a</cite>
         </footer>
     )
 }

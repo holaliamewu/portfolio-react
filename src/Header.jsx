@@ -5,8 +5,7 @@ export default function Header(){
     <header id='hd-container'>
     <img src={logo} alt='logo'/>
     <div id='navs-container'>
-      <div className='navs projects'>PROJECTS</div>
-      <div className='navs contact'>CONTACT</div>
+      <div className='navs projects'>CHECK OUT WHAT I'VE DONE</div>
     </div>
     </header>
   )
