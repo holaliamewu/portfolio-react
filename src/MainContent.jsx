@@ -1,7 +1,7 @@
-import {useEffect, useRef, useState} from "react"
+import {useEffect} from "react"
 import About from './About.jsx'
-import Pimg1 from '/public/umo-08-06.png'
-import myPic from '/public/myPic.jpg'
+import Pimg1 from '/umoImage.png'
+import myPic from '/myPic.jpg'
 
 export default function MainContent() {
     useEffect(()=> {
@@ -19,18 +19,18 @@ export default function MainContent() {
         hiddenElements.forEach((el) => Observer.observe(el))
         
         
-        const Observer1 = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if(entry.isIntersecting){
-                    entry.target.classList.add("show1")
-                } else {
-                    entry.target.classList.remove('show1')
-                }
-            })
-        })
+        // const Observer1 = new IntersectionObserver((entries) => {
+        //     entries.forEach((entry) => {
+        //         if(entry.isIntersecting){
+        //             entry.target.classList.add("show1")
+        //         } else {
+        //             entry.target.classList.remove('show1')
+        //         }
+        //     })
+        // })
 
-        const hiddenElements1 = document.querySelectorAll('.hidden1')
-        hiddenElements.forEach((el) => Observer1.observe(el))
+        // const hiddenElements1 = document.querySelectorAll('.hidden1')
+        // hiddenElements.forEach((el) => Observer1.observe(el))
     },[])
 
     return(

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '/public/theholalicodes.png'
+import logo from '/theholalicodes.png'
 export default function Header(){
   return(
     <header id='hd-container'>
