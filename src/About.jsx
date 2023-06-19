@@ -9,7 +9,7 @@ export default function About() {
                 computer Science student at the Ghana Communication Technology University.</p>
                 <p className='hidden'>After getting introduced to the computer and internet by my Uncle at young age,
                 I've always been intruiged by what's behind the computer. I guess this curiosity is what got into coding in late 2021.
-                I recently graduated from <bold>Scrimba's Frontend Developer Course</bold> and ready to share all I got with working space.
+                I recently graduated from <bold><a id='scrimba' href='https://scrimba.com/learn/frontend' target='_blank'>Scrimba's Frontend Developer Course</a></bold> and ready to share all I got with working space.
                 </p>
                 <p className='hidden'> I effortlessly love to build intuitive and interactive web applications with readable and 
                 maintainable code.</p>
@@ -19,7 +19,7 @@ export default function About() {
     
             <a href='#contact' id='reach-out' >Reach<br/>out</a>
         </div>
-        <a href='https://rxresu.me/holali07/amewu-emmanuel-mensah' id='resume'>
+        <a href='https://rxresu.me/holali07/amewu-emmanuel-mensah' target='_blank' id='resume'>
             <h4>SEE MY RESUME <i class="fa-solid fa-arrow-up-right-from-square"></i></h4>
         </a>
         <div id='tech-section'>

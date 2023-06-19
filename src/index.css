@@ -204,6 +204,11 @@ footer{
 
 #icons-container :nth-child(1){
   color: rgba(173, 216, 230, 0.523);
+  transition: 1s all;
+}
+
+#icons-container :nth-child(1):hover{
+  color: lightblue;
 }
 
 .project{
@@ -293,4 +298,43 @@ cite{
     top: 10vh;
     width: 100px;
   }
+}
+
+.fa-rocket {
+  font-size: 1.5em;
+  transform: rotate(315deg);
+  background: #070720;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#theRocket {
+  height: 100px;
+  width: fit-content;
+  padding: 10px;
+  margin: 0 auto 10px auto;
+  transition: all 1s ease;
+}
+
+#tooltip-rocket {
+  color: rgba(173, 216, 230, 0.623);
+  font-size: 10px;
+  display: none;
+}
+
+#theRocket:hover {
+  #tooltip-rocket {
+    color: rgba(173, 216, 230, 0.623);
+    font-size: 10px;
+    display: block;
+  }
+}
+
+#linkToUmo {
+  color: rgb(0, 162, 255);
+}
+
+#scrimba {
+  color: lightblue;
 }
