@@ -5,6 +5,7 @@ import Contact from './Contact.jsx'
 import Pimg1 from '/umoImage.png';
 import myPic from '/myPic.jpg';
 import {useInView, motion} from 'framer-motion';
+import Header from "./Header.jsx";
 
 
 /*
@@ -20,6 +21,7 @@ export default function MainContent() {
     const [isAboutInView, setIsAboutInView] = useState(false)
     const [isProjectInView, setIsProjectInView] = useState(false)
     const [isContactInView, setIsContactInView] = useState(false)
+    const [showInfo, setShowInfo] = useState(true)
     
     const ref= useRef(null);
     const isInView = useInView(ref ,{margin: '-50% 0% -50% 0%'})
@@ -93,6 +95,7 @@ export default function MainContent() {
             style={fadedText}
             >
              <div id="left-pane">
+             <Header pureColors={pureColors} />
              <h1 id="name" style={pureColors}>Amewu Emmanuel<br/> Mensah.</h1><br/>
              <h1 id="role" style={pureColors}>Front-End Developer.</h1><br/>    
              <h4 id="short-about">I build with intuitivity, interactive and <br/>optimization in mind.</h4>
@@ -156,35 +159,23 @@ export default function MainContent() {
                     <div className="project one"  
                     >
                         <h4 id="projects-hd" style={pureColors}>02. Projects.</h4>
-                        <img id="img-p1" src={Pimg1}/><br/>
+                        <div className="project-info-container" onMouseEnter={() => {setShowInfo(false)}} onMouseLeave={() => {setShowInfo(true)}}>
+                           {showInfo && <div id="inner-one">
+                           <h3>Umo dashboard</h3>
+                           <h5>minimal productivity dashboard made with HTML, CSS & React.Js</h5>
+                       </div>} 
+                        </div><br/>
                         <p >The very first project i created with a framework and being the most challenging project at the time taught me a lot. I had the opportunity to bring out all the hidden gems i had acquired the times i spent on tutorials.</p><br/>                
                         <p >This productivity dashboard i called "Umo" [ a random name that popped up while building it :) ] displays on every new tab a user opens with a picture from a category the user specifies , a clock, a weather pane,
                         a menu that allows you to edit your particulars or preferences and journal that takes in your "plans" for that day.</p> <br/>
                         <p >Umo is obviously not the most complex project I've made but I must admit that the gems I've grasped 
                         creating it is just priceless. The only thing that took most of my time is getting the weather icon to display lol [was minute but a bit tough].  
                         </p>
-                        <div>
-                        <motion.span 
-                        className="usedStack"
-                        animate={{color: darkMode? 'black' : '#D6EAF8', backgroundColor: darkMode? 'white' : 'black'}}
-                        whileHover={{backgroundColor: '#D6EAF8'}}
-                        >html5</motion.span>
-                        <motion.span 
-                        className="usedStack"
-                        animate={{color: darkMode? 'black' : 'white', backgroundColor: darkMode? 'white' : 'black'}}
-                        whileHover={{backgroundColor: '#D6EAF8'}}
-                        >css3</motion.span>
-                        <motion.span 
-                        className="usedStack"
-                        animate={{color: darkMode? 'black' : 'white', backgroundColor: darkMode? 'white' : 'black'}}
-                        whileHover={{backgroundColor: '#D6EAF8'}}
-                        >React.js</motion.span>
                         <motion.i id="project-link-umo"
                         class="fa-solid fa-arrow-right"
                         initial={{rotate: -45}}
                         whileHover={{x: 3, y: -3}}
                         ></motion.i>
-                        </div>
                     </div>
                 </div>
                 <Contact pureColors={pureColors} darkMode={darkMode} setView={setIsContactInView}/>

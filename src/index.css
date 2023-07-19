@@ -8,24 +8,15 @@
 
 header {
   position: fixed;
-  top: 0;
-  left: 37%;
+  top: 3%;
+  left: 3%;
   width: 20vw;
-  border-radius: 5px;
-  padding: 10px;
-  backdrop-filter: blur(3px);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 18px black;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  z-index: 1;  
+  border-radius: 5px; 
 }
 
-#logo {
-  width: 100px;
-  margin: auto;
-  z-index: 2;
+header > h3 {
+  font-weight: 900;
+  font-size: 2em;
 }
 
 body {
@@ -56,11 +47,6 @@ main {
   height: 40%;
 }
 
-#name,
-#role {
-  font-weight: 700;
-}
-
 #name {
   font-size: 29px;
   margin-bottom: -10px;
@@ -68,6 +54,12 @@ main {
 
 #role {
   font-size: 20px;
+}
+
+#name,
+#role {
+  font-weight: 800;
+
 }
 
 nav {
@@ -187,13 +179,17 @@ cite {
   font-size: 14px;
 }
 
+.stack {
+  background: rgba(0, 0, 0, 0.137);
+  border-radius: 7px;
+  width: fit-content;
+}
+
 .usedStack {
   display: inline-block;
   width: fit-content;
-  font-size: 0.7em;
-  border-radius: 10px;
-  padding: 5px;
-  margin: 10px 5px;
+  padding: 4px;
+  margin: 12px 4px;
   font-weight: 600;
 }
 
@@ -226,8 +222,39 @@ cite {
  margin: auto;
 }
 
-#img-p1 {
+.project-info-container {
   width: 400px;
+  height: 205px;
   border-radius: 8px;
   margin: 2em 0;
+  background-image: url(/public/umoImage.png);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:100%;
+}
+
+.project-info-container > #inner-one {
+ background-color: rgba(0, 0, 0, 0.76);
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ 
+}
+
+#inner-one > h3 {
+  font-weight: 800;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.233);
+  margin-bottom: 40px;
+}
+
+
+#inner-one > h5 {
+  font-weight: 600;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.233);
+  width: 70%;
+  text-align: center;
 }

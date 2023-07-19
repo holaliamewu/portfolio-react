@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
-import logo from '/theholalicodes.png'
 
-// <img id='logo' src={logo} alt='logo'/>
-export default function Header(){
+export default function Header({pureColors}){
 
   return(
     <header id='hd-container'>
-     <h3>holali.a</h3>
+     <h3 style={pureColors}>holali.a</h3>
     </header>
   )
 }
