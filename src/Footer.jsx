@@ -1,20 +1,32 @@
-import React from "react"
-import Contact from './Contact'
+import React, { useState } from "react"
 
-export default function Footer({pureColors, darkMode}) {
- 
+export default function Footer({pureColors}) {
+ const [rocket, setRocket] = useState(false);
 const rocketBtn = document.querySelector('.fa-rocket')
 function rocketGo() {
     window.scrollTo({top: 0, behavior: 'smooth'})
 }
+
+    function showRocketTT() {
+        setRocket(true)
+    }
+    
+    function removeRocketTT() {
+        setRocket(false)
+    }
+
     return(
         <footer>
-        <Contact pureColors={pureColors} darkMode={darkMode}/>
-        <div id="theRocket">
-        <i class="fa-solid fa-rocket" onClick={rocketGo}></i>
-        <span id="tooltip-rocket" onClick={rocketGo}>umo, to the top</span>
+        <div 
+        id="theRocket" 
+        onMouseOver={showRocketTT} 
+        onMouseOut={removeRocketTT}
+        style={pureColors}>
+        <i class="fa-solid fa-rocket" onClick={rocketGo}></i><br/>
+        {rocket && (<span id="tooltip-rocket" onClick={rocketGo}
+        >umo, to the top!</span>)}
         </div>
-        <cite>designed and built by yours truely.</cite>
+        <cite>Designed and Built by yours truely.</cite>
         </footer>
     )
 }

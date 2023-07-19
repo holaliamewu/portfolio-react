@@ -1,7 +1,13 @@
-import React from "react";
-import {motion} from 'framer-motion';
+import {useEffect, useRef} from "react";
+import {motion, useInView} from 'framer-motion';
 
-export default function Contact({pureColors}){
+export default function Contact({pureColors, setView}){
+
+    const ref = useRef(null);
+    const isInView = useInView(ref ,{margin: '-50% 0% -50% 0%'})
+    useEffect(() => {
+        setView(isInView? true: false)  
+    },[isInView])
 
 const sayHiVariant = {
     hover:{
@@ -18,11 +24,11 @@ const sayHiVariant = {
 
 
     return(
-        <div  id="contact">
+        <div  id="contact" ref={ref}>
             <h4 id="contact-hd" style={pureColors}>03. Want To Get In Touch ?</h4>
-            <p>Yes, I'm looking for a job so whether it's about it,
-             a collaboration or you just want to say Hi. Shoot me a 'hi'.
-              I'll do everything possible to get back to you</p>
+            <p>Yes, I'm looking for a job so whether it's about it,<br/>
+             a collaboration or you just want to say 'Hi👋',<br/> shoot it at me.
+             I'll surely get back to you. </p>
             <motion.a 
             variants={sayHiVariant}
             whileHover='hover'

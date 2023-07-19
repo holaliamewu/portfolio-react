@@ -77,8 +77,10 @@ nav {
 .nav {
   color: rgba(7, 7, 7, 0.452);
   padding: 3px;
-  font-size: 1em;
-  font-weight: 800;
+  font-size: 0.9em;
+  font-weight: 700;
+  cursor: pointer;
+  width: fit-content;
 }
 
 #right-pane {
@@ -109,7 +111,7 @@ a {
 }
 
 .project {
-  margin: 3em 0;
+  margin: 0;
 }
 
 #about-text > p,
@@ -144,7 +146,7 @@ footer {
   border-radius: 5px;
   font-size: 0.8em;
   font-weight: 600;
-  margin: 1em auto;
+  margin: 2em 0 2em 120px ;
 }
 
 #contact > p,
@@ -161,22 +163,24 @@ footer {
 }
 
 cite {
+  display: block;
+  text-align: center;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  position: sticky;
-  bottom: 3px;
-  right: 20vw;
 }
 
 #theme {
   position: fixed;
   left: 7px;
   bottom:7px;
+  font-size: 1.2em;
 }
 
-#tech-section {
-  margin: 100px 0;
+#about,
+#projects-container {
+  padding-bottom: 20vh;
+  margin-top: -1px;
 }
 
 #resume-link-icon {
@@ -198,6 +202,32 @@ cite {
  margin-left: 5px;
 }
 
-#techstack-container > i{
-  font-size: 1.4em;
+#scrimba {
+  font-weight: 700;
+}
+
+#theRocket {
+  margin: auto;
+  height: 50px;
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+.fa-rocket {
+  display: block;
+  transform: rotate(-45deg);
+  font-size: 1.5em;
+  margin: auto;
+}
+
+#tooltip-rocket {
+ font-size: 12px;
+ text-align: center;
+ margin: auto;
+}
+
+#img-p1 {
+  width: 400px;
+  border-radius: 8px;
+  margin: 2em 0;
 }
