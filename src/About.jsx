@@ -25,9 +25,9 @@ export default function About({pureColors, fadedText, setView}) {
         <motion.a  style={pureColors}
         whileHover= {{ textDecoration: 'underline'}}
         href='https://rxresu.me/holali07/amewu-emmanuel-mensah' target='_blank' id='resume'>
-            <motion.h4 >View My Résumé <motion.i
+            <motion.h4 >View My Résumé. <motion.i
             whileHover={{x: 3}}
-            id='resume-link-icon' class="fa-solid fa-arrow-right"> </motion.i>.</motion.h4>
+            id='resume-link-icon' class="fa-solid fa-arrow-right"> </motion.i></motion.h4>
         </motion.a>
         </div>
     )

@@ -4,7 +4,7 @@ import Footer from "./Footer.jsx";
 import Contact from './Contact.jsx'
 import Pimg1 from '/umoImage.png';
 import myPic from '/myPic.jpg';
-import {useInView, motion} from 'framer-motion';
+import {useInView, motion, color, easeIn} from 'framer-motion';
 import Header from "./Header.jsx";
 
 
@@ -22,7 +22,8 @@ export default function MainContent() {
     const [isProjectInView, setIsProjectInView] = useState(false)
     const [isContactInView, setIsContactInView] = useState(false)
     const [showInfo, setShowInfo] = useState(true)
-    
+    const [ toAurora, setToAurora ] = useState(false)
+
     const ref= useRef(null);
     const isInView = useInView(ref ,{margin: '-50% 0% -50% 0%'})
 
@@ -31,45 +32,57 @@ export default function MainContent() {
     },[isInView])
 
     const pureColors = {
-        color: darkMode? 'white' : 'black'
+        color: toAurora? '#00e980': darkMode? 'white' : 'black'
     }
     
     const fadedText = {
-        color: darkMode? 'rgba(255, 255, 255, 0.658)' : 'rgba( 7, 7, 7, 0.7)'
+        color: toAurora? ' #2e7686' : darkMode? 'rgba(255, 255, 255, 0.658)' : 'rgba( 7, 7, 7, 0.7)'
     }
     
     const navVariant = {
-        faded: {color: darkMode? 'rgba(255, 255, 255, 0.658)' : 'rgba( 7, 7, 7, 0.7)'},
+        faded: {color: toAurora? ' #2e7686' : darkMode? 'rgba(255, 255, 255, 0.658)' : 'rgba( 7, 7, 7, 0.7)'},
         hover: {
             scale: 1.2,
             fontWeight: '900',
             x:5,
-            color: darkMode? 'white' : 'black',
+            color: toAurora? '#00e980' : darkMode? 'white' : 'black',
             originX: 0,
         },
         animateAbout: {
-            color: isAboutInView && darkMode ? 'white' : isAboutInView? 'black' : 'gray',
-             scale: isAboutInView ? '1.2' : '1', originX: 0 ,x: 5,fontWeight: isAboutInView ? '900' : '700',
-             transition: {
-                 type: 'spring',
-                 stiffness: 120
-             }
+            color: isAboutInView && darkMode && !toAurora ? 'white' :
+
+                    !darkMode && isAboutInView ?  'black' :
+                    !toAurora && !isAboutInView ?  'gray' : 
+                    toAurora && !isAboutInView ?   '#2e7686' : '#00e980',
+                scale: isAboutInView ? '1.2' : '1', originX: 0 ,x: 5,fontWeight: isAboutInView ? '900' : '700',
+                transition: {
+                    type: 'spring',
+                    stiffness: 120
+                }
             },
         animateProject: {
-            color: isProjectInView  && darkMode? 'white' : isProjectInView && !darkMode ? 'black' : 'gray',
-             scale: isProjectInView ? '1.2' : '1', originX: 0 ,x: 5,fontWeight: isProjectInView ? '900' : '700',
-             transition: {
-                 type: 'spring',
-                 stiffness: 120 
-             }
+            color: isProjectInView && darkMode && !toAurora ? 'white' :
+
+                    !darkMode && isProjectInView ?  'black' :
+                    !toAurora && !isProjectInView ?  'gray' : 
+                    toAurora && !isProjectInView ?   '#2e7686' : '#00e980',
+                scale: isProjectInView ? '1.2' : '1', originX: 0 ,x: 5,fontWeight: isProjectInView ? '900' : '700',
+                transition: {
+                    type: 'spring',
+                    stiffness: 120
+                }
             },
         animateContact: {
-            color: isContactInView   && darkMode? 'white' : isContactInView && !darkMode? '#121212' : 'gray',
-             scale: isContactInView ? '1.2' : '1', originX: 0 ,x: 5, fontWeight: isContactInView ? '900' : '700',
-             transition: {
-                type: 'spring',
-                stiffness: 120
-             }
+            color: isContactInView && darkMode && !toAurora ? 'white' :
+
+                    !darkMode && isContactInView ?  'black' :
+                    !toAurora && !isContactInView ?  'gray' : 
+                    toAurora && !isContactInView ?   '#2e7686' : '#00e980',
+                scale: isContactInView ? '1.2' : '1', originX: 0 ,x: 5,fontWeight: isContactInView ? '900' : '700',
+                transition: {
+                    type: 'spring',
+                    stiffness: 120
+                }
             }
     }
 
@@ -88,17 +101,17 @@ export default function MainContent() {
     return(
         <main 
         style={{
-            backgroundColor: darkMode? '#121212' : 'white'
+            backgroundColor: toAurora? '#011926' : darkMode? '#121212' : 'white'
         }}
         >
             <div id="left-pane-container" 
-            style={fadedText}
+            style={{color: toAurora? '#000c13' : darkMode? 'white' : 'gray'}}
             >
              <div id="left-pane">
-             <Header pureColors={pureColors} />
+             <Header pureColors={pureColors} toAurora={toAurora} darkmode={darkMode} />
              <h1 id="name" style={pureColors}>Amewu Emmanuel<br/> Mensah.</h1><br/>
              <h1 id="role" style={pureColors}>Front-End Developer.</h1><br/>    
-             <h4 id="short-about">I build with intuitivity, interactive and <br/>optimization in mind.</h4>
+             <h4 id="short-about" style={fadedText}>I build with intuitivity, interactive and <br/>optimization in mind.</h4>
              <nav>
                 <motion.div
                 onClick={toAboutSection} 
@@ -139,13 +152,28 @@ export default function MainContent() {
                 <a href="https://github.com/holaliamewu" target="_blank">
                 <motion.i style={pureColors} class="fa-brands fa-github"></motion.i>
                 </a>
-             </div>
-             <motion.i style={fadedText}
-              id='theme' 
-              class= {darkMode? "fa-solid fa-sun" : "fa-solid fa-moon"} onClick={() => {setDarkMode(prev => !prev)}}
-              whileTap={{rotate: -180}}
-              whileHover={{color: darkMode? 'white' : 'black'}}
-              ></motion.i>
+                </div>
+                <motion.span
+                 id='theme'
+                 style={{backgrondColor: toAurora? 'white':'#011926'}}
+                 transition={{duration: '1s'}}
+                 >
+                    <motion.i style={{color: toAurora? 'white' : '#245c69', backgroundColor: toAurora? 'transparent' : '#00e980'}}
+                    class= {darkMode? "fa-solid fa-sun" : "fa-solid fa-moon"} onClick={() => {
+                        setToAurora(false)
+                        setDarkMode(prev => !prev)}}
+                    whileTap={{rotate: -180}}
+                    ></motion.i>
+                    <motion.i 
+                    style={{backgroundColor: toAurora? 'white' : '' }}
+                    onClick={() => { 
+                        setToAurora(prev => !prev)
+                    }}
+                    class="fa-solid fa-fire-flame-curved"></motion.i>
+                </motion.span>
+                <span id="theme-name"
+                style={{color: toAurora? '#00e980' : darkMode? 'white' : 'black'}}
+                >{toAurora? 'aurora' : darkMode?  'charcoal dark' : 'kanea'}</span>
              </div>
             </div>
             <div id="right-pane" style={fadedText}>
@@ -171,11 +199,16 @@ export default function MainContent() {
                         <p >Umo is obviously not the most complex project I've made but I must admit that the gems I've grasped 
                         creating it is just priceless. The only thing that took most of my time is getting the weather icon to display lol [was minute but a bit tough].  
                         </p>
-                        <motion.i id="project-link-umo"
-                        class="fa-solid fa-arrow-right"
-                        initial={{rotate: -45}}
-                        whileHover={{x: 3, y: -3}}
-                        ></motion.i>
+                        <span className="link-icons" >
+                            <motion.i 
+                            style={pureColors}
+                            class="fa-brands fa-github"
+                            ></motion.i>
+                            <motion.i 
+                            style={pureColors}
+                            class="fa-solid fa-arrow-up-right-from-square"
+                            ></motion.i>
+                        </span>
                     </div>
                 </div>
                 <Contact pureColors={pureColors} darkMode={darkMode} setView={setIsContactInView}/>

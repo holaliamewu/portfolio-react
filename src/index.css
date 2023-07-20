@@ -9,7 +9,7 @@
 header {
   position: fixed;
   top: 3%;
-  left: 3%;
+  left: 5%;
   width: 20vw;
   border-radius: 5px; 
 }
@@ -158,6 +158,7 @@ cite {
   display: block;
   text-align: center;
   font-style: normal;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 500;
   font-size: 12px;
 }
@@ -166,9 +167,12 @@ cite {
   position: fixed;
   left: 7px;
   bottom:7px;
-  font-size: 1.2em;
+  font-size: 1em;
+  border-radius: 17px;
+  padding: 2px 2px;
+  background-color: #245c69;
+  background-color: #2e7686;
 }
-
 #about,
 #projects-container {
   padding-bottom: 20vh;
@@ -240,7 +244,7 @@ cite {
  flex-direction: column;
  align-items: center;
  justify-content: center;
- 
+ border-radius: 8px;
 }
 
 #inner-one > h3 {
@@ -257,4 +261,52 @@ cite {
   color: rgba(255, 255, 255, 0.233);
   width: 70%;
   text-align: center;
+}
+
+.link-icons {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 6px 8px; 
+  margin: 8px 0;
+  box-shadow: 0 0 8px ;
+}
+
+.link-icons > .fa-github,
+.link-icons > .fa-arrow-up-right-from-square {
+  padding: 0 6px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.link-icons > .fa-arrow-up-right-from-square {
+  font-size: 1em;
+}
+
+#theme-name {
+  position: fixed;
+  bottom: 10px;
+  left: 6%;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 3px;
+}
+
+
+.fa-moon,
+.fa-fire-flame-curved {
+  padding: 2px 4px;
+  margin: 1px;
+  border-radius: 150px;
+}
+
+.fa-fire-flame-curved {
+  margin-left: 10px;
+  color: #00E980;
+}
+
+.fa-sun {
+  padding: 2px 2px;
+  margin: 1px;
+  border-radius: 150px;
 }
