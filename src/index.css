@@ -271,14 +271,14 @@ cite {
   box-shadow: 0 0 8px ;
 }
 
-.link-icons > .fa-github,
-.link-icons > .fa-arrow-up-right-from-square {
+#fa-github,
+#fa-arrow-up-right-from-square {
   padding: 0 6px;
   font-size: 1.2em;
   cursor: pointer;
 }
 
-.link-icons > .fa-arrow-up-right-from-square {
+#fa-arrow-up-right-from-square {
   font-size: 1em;
 }
 

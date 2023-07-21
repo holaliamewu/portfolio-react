@@ -2,18 +2,11 @@ import {useState,useEffect, useRef} from "react";
 import About from './About.jsx';
 import Footer from "./Footer.jsx";
 import Contact from './Contact.jsx'
-import Pimg1 from '/umoImage.png';
-import myPic from '/myPic.jpg';
-import {useInView, motion, color, easeIn} from 'framer-motion';
+import {useInView, motion, easeIn} from 'framer-motion';
 import Header from "./Header.jsx";
 
 
-/*
-
-4 TODAY --> :
-* Fix all the small bugs around the footer section.
-
-*/
+//TODO: fire the links to their respective sites
 
 
 export default function MainContent() {
@@ -50,38 +43,41 @@ export default function MainContent() {
         },
         animateAbout: {
             color: isAboutInView && darkMode && !toAurora ? 'white' :
-
+                    !darkMode && isAboutInView && toAurora ?  '#00e980' :
                     !darkMode && isAboutInView ?  'black' :
                     !toAurora && !isAboutInView ?  'gray' : 
                     toAurora && !isAboutInView ?   '#2e7686' : '#00e980',
                 scale: isAboutInView ? '1.2' : '1', originX: 0 ,x: 5,fontWeight: isAboutInView ? '900' : '700',
                 transition: {
                     type: 'spring',
-                    stiffness: 120
+                    stiffness: 130,
+                    duration: 0.4
                 }
             },
         animateProject: {
             color: isProjectInView && darkMode && !toAurora ? 'white' :
-
+            !darkMode && isProjectInView && toAurora ?  '#00e980' :
                     !darkMode && isProjectInView ?  'black' :
                     !toAurora && !isProjectInView ?  'gray' : 
                     toAurora && !isProjectInView ?   '#2e7686' : '#00e980',
                 scale: isProjectInView ? '1.2' : '1', originX: 0 ,x: 5,fontWeight: isProjectInView ? '900' : '700',
                 transition: {
                     type: 'spring',
-                    stiffness: 120
+                    stiffness: 130,
+                    duration: 0.4
                 }
             },
         animateContact: {
             color: isContactInView && darkMode && !toAurora ? 'white' :
-
+            !darkMode && isContactInView && toAurora ?  '#00e980':
                     !darkMode && isContactInView ?  'black' :
                     !toAurora && !isContactInView ?  'gray' : 
                     toAurora && !isContactInView ?   '#2e7686' : '#00e980',
-                scale: isContactInView ? '1.2' : '1', originX: 0 ,x: 5,fontWeight: isContactInView ? '900' : '700',
+                fontSize: isContactInView ? '1.2' : '1', originX: 0 ,x: 5,fontWeight: isContactInView ? '900' : '700',
                 transition: {
                     type: 'spring',
-                    stiffness: 120
+                    stiffness: 130,
+                    duration: 0.4
                 }
             }
     }
@@ -190,7 +186,7 @@ export default function MainContent() {
                         <div className="project-info-container" onMouseEnter={() => {setShowInfo(false)}} onMouseLeave={() => {setShowInfo(true)}}>
                            {showInfo && <div id="inner-one">
                            <h3>Umo dashboard</h3>
-                           <h5>minimal productivity dashboard made with HTML, CSS & React.Js</h5>
+                           <h5>Minimal productivity dashboard made with HTML, CSS & React.Js</h5>
                        </div>} 
                         </div><br/>
                         <p >The very first project i created with a framework and being the most challenging project at the time taught me a lot. I had the opportunity to bring out all the hidden gems i had acquired the times i spent on tutorials.</p><br/>                
@@ -200,14 +196,24 @@ export default function MainContent() {
                         creating it is just priceless. The only thing that took most of my time is getting the weather icon to display lol [was minute but a bit tough].  
                         </p>
                         <span className="link-icons" >
-                            <motion.i 
-                            style={pureColors}
-                            class="fa-brands fa-github"
-                            ></motion.i>
+                            <a
+                            href="https://github.com/holaliamewu/umo-react" target='_blank'>
+                                <motion.i 
+                                style={pureColors}
+                                class="fa-brands fa-github"
+                                id="fa-github"
+                                ></motion.i>
+                            </a>
+                            <a 
+                            href='https://holalia.netlify.com' 
+                            target="_blank"
+                            >
                             <motion.i 
                             style={pureColors}
                             class="fa-solid fa-arrow-up-right-from-square"
+                            id="fa-arrow-up-right-from-square"
                             ></motion.i>
+                            </a>
                         </span>
                     </div>
                 </div>
