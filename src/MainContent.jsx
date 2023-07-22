@@ -205,7 +205,7 @@ export default function MainContent() {
                                 ></motion.i>
                             </a>
                             <a 
-                            href='https://holalia.netlify.com' 
+                             
                             target="_blank"
                             >
                             <motion.i 
