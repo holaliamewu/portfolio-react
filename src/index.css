@@ -310,3 +310,14 @@ cite {
   margin: 1px;
   border-radius: 150px;
 }
+
+#notice {
+  display: inline-block;
+  font-weight: 500;
+  transform: rotate(-10deg);
+  margin-left:70%;
+  border: 1px solid red;
+  border-radius: 8px;
+  padding: 4px;
+  font-size: 0.9em;
+}

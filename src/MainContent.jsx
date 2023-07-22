@@ -193,7 +193,7 @@ export default function MainContent() {
                         <p >This productivity dashboard i called "Umo" [ a random name that popped up while building it :) ] displays on every new tab a user opens with a picture from a category the user specifies , a clock, a weather pane,
                         a menu that allows you to edit your particulars or preferences and journal that takes in your "plans" for that day.</p> <br/>
                         <p >Umo is obviously not the most complex project I've made but I must admit that the gems I've grasped 
-                        creating it is just priceless. The only thing that took most of my time is getting the weather icon to display lol [was minute but a bit tough].  
+                        creating it is just priceless. Getting data from users and syncing it definitely the biggest challenge i encountered while building this extension[ in fact i'm still figuring a bug out on there so the extension is currently taken down.].
                         </p>
                         <span className="link-icons" >
                             <a
@@ -215,6 +215,7 @@ export default function MainContent() {
                             ></motion.i>
                             </a>
                         </span>
+                        <span id="notice">currently<br/> unavailable</span>
                     </div>
                 </div>
                 <Contact pureColors={pureColors} darkMode={darkMode} setView={setIsContactInView}/>
