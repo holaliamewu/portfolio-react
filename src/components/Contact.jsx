@@ -32,7 +32,7 @@ const sayHiVariant = {
              a collaboration or you just want to say 'Hi👋',<br/> shoot it at me.
              I'll surely get back to you. </p>
             <motion.a 
-            className='inline-block bg-red-400 mx-auto'
+            className='inline-block rounded text-[12px] my-6 border border-black py-2 px-3'
             variants={sayHiVariant}
             whileHover='hover'
             whileTap='active'

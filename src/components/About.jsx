@@ -12,17 +12,20 @@ export default function About({pureColors, fadedText, setView}) {
         <div className='w-[90%] mx-auto' 
             ref={ref}>
             <div className='' >
-                <h4 className='font-bold text-lg'
-                  style={pureColors}>01. Bits About Myself.</h4>
-                <p className='text-[14.5px]'
-                >After getting introduced to the computer and internet by my Uncle at young age,
+                <h4 
+                className='font-bold text-[17px] py-2'
+                style={pureColors}
+                  
+                  >01. Bits About Myself.</h4>
+                <p className='text-[14px]'
+                >After getting introduced to the computer and internet by my Uncle at a young age,
                 I've always been intruiged by what's behind the computer. I guess this curiosity is what got into coding in late 2021.
-                I recently graduated from <a id='scrimba' style={pureColors} href='https://scrimba.com/learn/frontend' target='_blank'>Scrimba's Frontend Developer Course</a> and ready to share all I got with working space.
-                currently based in Accra, Ghana. I'm currently a
-                computer Science student at the Ghana Communication Technology University.</p><br/>
-                <p className='text-[14.5px]'> I effortlessly love to build intuitive and interactive web applications with readable and 
+                I recently graduated from <a className='font-semibold' style={pureColors} href='https://scrimba.com/learn/frontend' target='_blank'>Scrimba's Frontend Developer Course</a> and I'm ready to share all I got with my surroundings.
+                I live in Accra, Ghana. I'm currently pursuing a degree
+                in computer Science at the Ghana Communication Technology University.</p><br/>
+                <p className='text-[14px]'> I effortlessly love to build intuitive and interactive web applications with readable and 
                 maintainable code.</p><br/>
-                <p className='text-[14.5px]'>When I don't have my hands on the keyboard I love see new places of the world and watching soccer.
+                <p className='text-[14px]'>When I don't have my hands on the keyboard I love see new places of the world and watching soccer.
                 I think I have some passion for content creating too. I'll definitely hop into it some point in my career.</p>
         </div>
         <motion.a 

@@ -97,20 +97,23 @@ export default function MainContent() {
         style={{
             backgroundColor: toAurora? '#011926' : darkMode? '#121212' : 'white'
         }}
+        className="flex justify-around"
         >
         <div id="left-pane-container" 
         style={{color: toAurora? '#000c13' : darkMode? 'white' : 'gray'}}
-        >
-        <div className="w-[90%] mx-auto">
-        <Header pureColors={pureColors} toAurora={toAurora} darkmode={darkMode} />
-        <Navbar />
-             <h1 className="font-bold text-3xl mt-20 mb-0" style={pureColors}>Amewu Emmanuel<br/> Mensah.</h1>
-             <h1 className="font-semibold text-xl mt-2" style={pureColors}>Front-End Developer.</h1><br/>    
-             <h4 className="xs:my-4" style={fadedText}>&lsquo;I build with intuitivity, interactive and <br/>optimization in mind.&rsquo;</h4>
+        className=" h-[100dvh] w-[45%] flex pl-[10vw] flex-col justify-center ">
+
+        <div className=" mx-auto fixed">
+
+            <Header pureColors={pureColors} toAurora={toAurora} darkmode={darkMode} />
+            <Navbar />
+             <h1 className="font-[800] text-3xl mt-20 mb-0" style={pureColors}>Amewu Emmanuel<br/> Mensah.</h1>
+             <h1 className="font-semibold text-xl mt-2 mb-[-25px]" style={pureColors}>Front-End Developer.</h1><br/>    
+             <h4 className="xs:my-4 text-[14px] font-[300] italic py-3 " style={fadedText}>&lsquo;&lsquo;I build with intuitivity, interactivity and <br/>optimization in mind.&rsquo;&rsquo;</h4>
              <nav className="xs:hidden md:block">
                 <motion.div
-                onClick={toAboutSection} 
-                className=""
+                onClick={toAboutSection}        
+                className="text-sm"
                 variants={navVariant}
                 initial='faded'
                 animate='animateAbout'
@@ -118,7 +121,7 @@ export default function MainContent() {
                 >ABOUT</motion.div>
                 <motion.div 
                 onClick={toProjectSection}
-                className=""
+                className="text-sm"
                 variants={navVariant}
                 initial='initial'
                 animate='animateProject'
@@ -126,7 +129,7 @@ export default function MainContent() {
                 >PROJECTS</motion.div>
                 <motion.div 
                 onClick={toContactSection}
-                className="nav contact"
+                className="text-sm"
                 variants={navVariant}
                 initial='initial'
                 animate='animateContact'
@@ -136,14 +139,19 @@ export default function MainContent() {
              <div className="flex items-center gap-4 my-16">
                 <a href="https://www.twitter.com/amewuholali" 
                 target="_blank">
-                <motion.i style={pureColors} class="fa-brands fa-twitter text-[20px]"></motion.i>
+                <motion.i style={pureColors} 
+                class="fa-brands fa-twitter text-[20px]"></motion.i>
                  </a>                
-                <a href="https://www.instagram.com/amewuholali/" target="_blank">
-                <motion.i style={pureColors} class="fa-brands fa-instagram text-[20px]"></motion.i>
+                
+                 <a href="https://www.instagram.com/amewuholali/" target="_blank">
+                <motion.i style={pureColors} 
+                class="fa-brands fa-instagram text-[20px]"></motion.i>
                 </a>
+                
                 <a href="https://www.linkedin.com/in/amewu-emmanuel-mensah/" target="_blank">
                 <motion.i style={pureColors} class="fa-brands fa-linkedin text-[20px]"></motion.i>
                 </a>
+                
                 <a href="https://github.com/holaliamewu" target="_blank">
                 <motion.i style={pureColors} class="fa-brands fa-github text-[20px]"></motion.i>
                 </a>
@@ -171,7 +179,12 @@ export default function MainContent() {
                 >{toAurora? 'aurora' : darkMode?  'charcoal dark' : 'kanea'}</span>
              </div>
             </div>
-            <div id="right-pane" style={fadedText}>
+
+
+            <div id="right-pane" 
+            style={fadedText}
+            className="w-[45%] pr-14 py-14"
+            >
                 <About 
                 pureColors={pureColors} 
                 setView={setIsAboutInView}
@@ -181,19 +194,8 @@ export default function MainContent() {
                 >
                     <div className="project one"  
                     >
-                        <h4 className="font-bold" style={pureColors}>02. Projects.</h4>
-                        <div onMouseEnter={() => {setShowInfo(false)}} onMouseLeave={() => {setShowInfo(true)}}>
-                           {showInfo && <div id="inner-one">
-                           <h3>Umo dashboard</h3>
-                           <h5>Minimal productivity dashboard made with HTML, CSS & React.Js</h5>
-                       </div>} 
-                        </div> <br/>
-                        <p className="text-[14.5px]">The very first project i created with a framework and being the most challenging project at the time taught me a lot. I had the opportunity to bring out all the hidden gems i had acquired the times i spent on tutorials.</p><br/>                
-                        <p className="text-[14.5px]">This productivity dashboard i called "Umo" [ a random name that popped up while building it :) ] displays on every new tab a user opens with a picture from a category the user specifies , a clock, a weather pane,
-                        a menu that allows you to edit your particulars or preferences and journal that takes in your "plans" for that day.</p> <br/>
-                        <p className="text-[14.5px]">Umo is obviously not the most complex project I've made but I must admit that the gems I've grasped 
-                        creating it is just priceless. Getting data from users and syncing it definitely the biggest challenge i encountered while building this extension[ in fact i'm still figuring a bug out on there so the extension is currently taken down.].
-                        </p>
+                        <h4 className="font-bold text-[17px]" style={pureColors}>02. Projects.</h4>
+                        
                         <span className="inline-block my-4 p-1 rounded shadow-md border shadow-grey-100" >
                             <a
                             href="https://github.com/holaliamewu/umo-react" target='_blank'>

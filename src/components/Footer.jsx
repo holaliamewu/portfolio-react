@@ -17,16 +17,17 @@ function rocketGo() {
 
     return(
         <footer>
-        <div 
-        id="theRocket" 
-        onMouseOver={showRocketTT} 
-        onMouseOut={removeRocketTT}
-        style={pureColors}>
-        <i class="fa-solid fa-rocket" onClick={rocketGo}></i><br/>
-        {rocket && (<span id="tooltip-rocket" onClick={rocketGo}
-        >umo, to the top!</span>)}
-        </div>
-        <cite>Designed and Built by yours truely.</cite>
+            <div 
+            onMouseOver={showRocketTT} 
+            onMouseOut={removeRocketTT}
+            style={pureColors}>
+            <i class="fa-solid fa-rocket" onClick={rocketGo}></i><br/>
+            {rocket && (<span id="tooltip-rocket" onClick={rocketGo}
+            >umo, to the top!</span>)}
+            </div>
+            <cite 
+            className="text-[12px] mx-auto inline-block"
+            >Designed and Built by myself.</cite>
         </footer>
     )
 }
