@@ -14,8 +14,9 @@ export default function Projects({pureColors}) {
             className="group block my-[55px] p-3  rounded  w-[350px] h-fit relative mx-auto md:ml-0" >
                 <img  
                 className='rounded'
-                src={project.projectImg} 
-                alt="project--one--image" />                       
+                src= {project.projectImg}
+                alt="project--one--image" 
+                />                       
                 <span 
                 className='flex justify-between'>
                     <h4 
