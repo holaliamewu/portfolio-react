@@ -4,7 +4,7 @@ import Footer from "./Footer.jsx";
 import Contact from './Contact.jsx'
 import { useInView, motion } from 'framer-motion';
 import Header from "./Header.jsx";
-import Navbar from "./navbar.jsx";
+import Navbar from "./Navbar.jsx";
 import Projects from "./Projects.jsx";
 import ThemeSwitch from "./ThemeSwitch.jsx";
 
@@ -76,7 +76,6 @@ export default function MainContent() {
                     !darkMode && isContactInView ?  'black' :
                     !toAurora && !isContactInView ?  'gray' : 
                     toAurora && !isContactInView ?   '#2e7686' : '#00e980',
-                fontSize: isContactInView ? '1.2' : '1',
                 fontWeight: isContactInView ? '700' : '400',
                 fontSize: isContactInView ? '13px' : '10px',
                 transition: {
