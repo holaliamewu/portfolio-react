@@ -1,42 +1,43 @@
 import React, {useEffect, useRef} from 'react';
 import {motion, useInView} from 'framer-motion';
 
-export default function About({pureColors, fadedText, setView}) {
+export default function About({pureColors, setView}) {
     const ref = useRef(null);
-    const isInView = useInView(ref ,{margin: '-50% 0% -50% 0%'})
+    const aboutIsInView = useInView(ref ,{margin: '-50% 0% -50% 0%'})
     useEffect(() => {
-        setView(isInView? true: false)  
-    },[isInView])
+        setView(aboutIsInView? true: false)  
+    },[aboutIsInView])
 
     return(
-        <div className='w-[90%] mx-auto' 
+        <div className='w-[80%] mx-auto py-[50px] ' 
             ref={ref}>
-            <div className='' >
+            <div className='font-[300]' >
                 <h4 
-                className='font-bold text-[17px] py-2'
+                className='font-[500] text-[16px] py-2'
                 style={pureColors}
                   
                   >01. Bits About Myself.</h4>
-                <p className='text-[14px]'
+                <p className='text-[14px] tracking-wide '
                 >After getting introduced to the computer and internet by my Uncle at a young age,
-                I've always been intruiged by what's behind the computer. I guess this curiosity is what got into coding in late 2021.
-                I recently graduated from <a className='font-semibold' style={pureColors} href='https://scrimba.com/learn/frontend' target='_blank'>Scrimba's Frontend Developer Course</a> and I'm ready to share all I got with my surroundings.
+                I've always been intruiged by what's behind it. I guess this curiosity is what got me into coding late 2021.</p> <br/>
+                <p className='text-[14px] tracking-wide ' >
+                I recently graduated from <a className='font-[400] italic origin-left hover:underline' style={pureColors} href='https://scrimba.com/learn/frontend' target='_blank'>Scrimba's Frontend Developer Course</a> and I'm ready to share all I got with my surroundings.
                 I live in Accra, Ghana. I'm currently pursuing a degree
                 in computer Science at the Ghana Communication Technology University.</p><br/>
-                <p className='text-[14px]'> I effortlessly love to build intuitive and interactive web applications with readable and 
+                <p className='text-[14px] tracking-wide'> I effortlessly love to build optimized and interactive web applications with readable and 
                 maintainable code.</p><br/>
-                <p className='text-[14px]'>When I don't have my hands on the keyboard I love see new places of the world and watching soccer.
-                I think I have some passion for content creating too. I'll definitely hop into it some point in my career.</p>
+                <p className='text-[14px] tracking-wide'>When I don't have my hands on the keyboard I go to new places and I love watching soccer too.
+                I think I have some passion for content creating too. I'll definitely hop on it some point in my career.</p>
         </div>
         <motion.a 
-        className='inline-block font-semibold text-[15px] my-4' 
+        className='group inline-block font-[500] text-[14px] my-4 ' 
         style={pureColors}
-        whileHover= {{ textDecoration: 'underline'}}
-        href='https://rxresu.me/holali07/amewu-emmanuel-mensah' target='_blank' id='resume'>
-            <motion.h4 >View My Résumé. <motion.i
-            whileHover={{x: 3}}
-            class="fa-solid fa-arrow-right"> </motion.i>
-            </motion.h4>
+        href='https://rxresu.me/holali07/amewu-emmanuel-mensah' target='_blank' >
+            <motion.h4  
+            className='group-hover:underline origin-left inline-block'
+            >View My Résumé</motion.h4>
+            <motion.i
+            class="fa-solid fa-arrow-right group-hover:translate-x-0.5 ml-1 duration-150">  </motion.i>
         </motion.a>
         </div>
     )

@@ -1,33 +1,15 @@
 import React, { useState } from "react"
+import Rocket from "./Rocket"
 
 export default function Footer({pureColors}) {
- const [rocket, setRocket] = useState(false);
-const rocketBtn = document.querySelector('.fa-rocket')
-function rocketGo() {
-    window.scrollTo({top: 0, behavior: 'smooth'})
-}
 
-    function showRocketTT() {
-        setRocket(true)
-    }
-    
-    function removeRocketTT() {
-        setRocket(false)
-    }
 
     return(
         <footer>
-            <div 
-            onMouseOver={showRocketTT} 
-            onMouseOut={removeRocketTT}
-            style={pureColors}>
-            <i class="fa-solid fa-rocket" onClick={rocketGo}></i><br/>
-            {rocket && (<span id="tooltip-rocket" onClick={rocketGo}
-            >umo, to the top!</span>)}
-            </div>
+           <Rocket pureColors={pureColors}/>
             <cite 
-            className="text-[12px] mx-auto inline-block"
-            >Designed and Built by myself.</cite>
+            className="block pt-12 text-[12px] mx-auto text-center "
+            >Designed and Built by <bold className="font-semibold">myself</bold>.</cite>
         </footer>
     )
 }

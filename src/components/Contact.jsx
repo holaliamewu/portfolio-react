@@ -24,15 +24,15 @@ const sayHiVariant = {
 
 
     return(
-        <div ref={ref}
-        className='w-[90%] mx-auto'>
-            <h4 className="font-bold" 
+        <div ref={ref} 
+        className='w-[90%] mx-auto text-center pt-[200px] '>
+            <h4 className="font-[500] text-[15px] py-2" 
             style={pureColors}>03. Want To Get In Touch ?</h4>
-            <p className="text-[14px]">Yes, I'm looking for a job so whether it's about it,<br/>
+            <p className="font-[300] text-[14px]">Yes, I'm looking for a job so whether it's about it,<br/>
              a collaboration or you just want to say 'Hi👋',<br/> shoot it at me.
              I'll surely get back to you. </p>
             <motion.a 
-            className='inline-block rounded text-[12px] my-6 border border-black py-2 px-3'
+            className='inline-block rounded text-[12px] my-6 border py-2 px-3'
             variants={sayHiVariant}
             whileHover='hover'
             whileTap='active'

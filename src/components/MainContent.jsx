@@ -1,10 +1,12 @@
-import {useState,useEffect, useRef} from "react";
+import { useState, useEffect, useRef }  from "react";
 import About from './About.jsx';
 import Footer from "./Footer.jsx";
 import Contact from './Contact.jsx'
-import {useInView, motion, easeIn} from 'framer-motion';
+import { useInView, motion } from 'framer-motion';
 import Header from "./Header.jsx";
 import Navbar from "./navbar.jsx";
+import Projects from "./Projects.jsx";
+import ThemeSwitch from "./ThemeSwitch.jsx";
 
 
 export default function MainContent() {
@@ -12,18 +14,20 @@ export default function MainContent() {
     const [isAboutInView, setIsAboutInView] = useState(false)
     const [isProjectInView, setIsProjectInView] = useState(false)
     const [isContactInView, setIsContactInView] = useState(false)
-    const [showInfo, setShowInfo] = useState(true)
     const [ toAurora, setToAurora ] = useState(false)
 
-    const ref= useRef(null);
-    const isInView = useInView(ref ,{margin: '-50% 0% -50% 0%'})
-
+    const projectRef = useRef(null);
+    const projectIsInView = useInView(projectRef ,{margin: '-50% 0% -50% 0%'})
     useEffect(() => {
-        setIsProjectInView(isInView? true: false)  
-    },[isInView])
+        setIsProjectInView(projectIsInView? true: false)  
+    },[projectIsInView])
+
+   
 
     const pureColors = {
-        color: toAurora? '#00e980': darkMode? 'white' : 'black'
+        color: toAurora? '#00e980': darkMode? 'white' : 'black',
+        borderColor: toAurora? '#00e980': darkMode? 'white' : 'black',
+
     }
     
     const fadedText = {
@@ -33,9 +37,8 @@ export default function MainContent() {
     const navVariant = {
         faded: {color: toAurora? ' #2e7686' : darkMode? 'rgba(255, 255, 255, 0.658)' : 'rgba( 7, 7, 7, 0.7)'},
         hover: {
-            scale: 1.2,
-            fontWeight: '900',
-            x:5,
+            fontWeight: '600',
+            x: 20,
             color: toAurora? '#00e980' : darkMode? 'white' : 'black',
             originX: 0,
         },
@@ -45,7 +48,8 @@ export default function MainContent() {
                     !darkMode && isAboutInView ?  'black' :
                     !toAurora && !isAboutInView ?  'gray' : 
                     toAurora && !isAboutInView ?   '#2e7686' : '#00e980',
-                scale: isAboutInView ? '1.2' : '1', originX: 0 ,x: 5,fontWeight: isAboutInView ? '900' : '700',
+                    fontWeight: isAboutInView ? 700 : 400,
+                    fontSize: isAboutInView ? '13px' : '10px',
                 transition: {
                     type: 'spring',
                     stiffness: 130,
@@ -58,8 +62,9 @@ export default function MainContent() {
                     !darkMode && isProjectInView ?  'black' :
                     !toAurora && !isProjectInView ?  'gray' : 
                     toAurora && !isProjectInView ?   '#2e7686' : '#00e980',
-                scale: isProjectInView ? '1.2' : '1', originX: 0 ,x: 5,fontWeight: isProjectInView ? '900' : '700',
-                transition: {
+                    fontWeight: isProjectInView ? '700' : '400',
+                    fontSize: isProjectInView ? '13px' : '10px',
+                    transition: {
                     type: 'spring',
                     stiffness: 130,
                     duration: 0.4
@@ -71,7 +76,9 @@ export default function MainContent() {
                     !darkMode && isContactInView ?  'black' :
                     !toAurora && !isContactInView ?  'gray' : 
                     toAurora && !isContactInView ?   '#2e7686' : '#00e980',
-                fontSize: isContactInView ? '1.2' : '1', originX: 0 ,x: 5,fontWeight: isContactInView ? '900' : '700',
+                fontSize: isContactInView ? '1.2' : '1',
+                fontWeight: isContactInView ? '700' : '400',
+                fontSize: isContactInView ? '13px' : '10px',
                 transition: {
                     type: 'spring',
                     stiffness: 130,
@@ -89,7 +96,7 @@ export default function MainContent() {
     }
     
     function toContactSection() {
-        window.scrollTo({top: 1500, behavior: 'smooth'})
+        window.scrollTo({top: 2500, behavior: 'smooth'})
     }
 
     return(
@@ -97,46 +104,46 @@ export default function MainContent() {
         style={{
             backgroundColor: toAurora? '#011926' : darkMode? '#121212' : 'white'
         }}
-        className="flex justify-around"
+        className="flex md:justify-around md:w-fit flex-col md:flex-row"
         >
         <div id="left-pane-container" 
         style={{color: toAurora? '#000c13' : darkMode? 'white' : 'gray'}}
-        className=" h-[100dvh] w-[45%] flex pl-[10vw] flex-col justify-center ">
+        className=" h-[100dvh] md:w-[45vw] flex flex-col justify-center md:pl-[10vw]">
 
-        <div className=" mx-auto fixed">
+        <div className=" mx-auto md:fixed">
 
             <Header pureColors={pureColors} toAurora={toAurora} darkmode={darkMode} />
             <Navbar />
-             <h1 className="font-[800] text-3xl mt-20 mb-0" style={pureColors}>Amewu Emmanuel<br/> Mensah.</h1>
-             <h1 className="font-semibold text-xl mt-2 mb-[-25px]" style={pureColors}>Front-End Developer.</h1><br/>    
-             <h4 className="xs:my-4 text-[14px] font-[300] italic py-3 " style={fadedText}>&lsquo;&lsquo;I build with intuitivity, interactivity and <br/>optimization in mind.&rsquo;&rsquo;</h4>
+             <h1 className="font-[600] text-[24px] md:text-4xl mt-20 mb-0" style={pureColors}>Amewu <br className="hidden md:block"/>Emmanuel Mensah.</h1>
+             <h1 className="md:font-[500] font-[300] text-center md:text-left md:text-xl  mt-2 mb-[-25px]" style={pureColors}>Front-End Developer.</h1><br/>    
+             <h4 className="xs:my-4 text-[14px] font-[300] italic md:py-3 py-5 md:text-left text-center" style={fadedText}>&lsquo;&lsquo;I build with readability, interactivity and <br/>optimization in mind.&rsquo;&rsquo;</h4>
              <nav className="xs:hidden md:block">
                 <motion.div
                 onClick={toAboutSection}        
-                className="text-sm"
+                className="text-sm w-fit cursor-pointer"
+                initial='aboutInitial'
                 variants={navVariant}
-                initial='faded'
                 animate='animateAbout'
                 whileHover='hover'
                 >ABOUT</motion.div>
                 <motion.div 
                 onClick={toProjectSection}
-                className="text-sm"
+                className="text-sm w-fit cursor-pointer"
+                initial='projectInitial'
                 variants={navVariant}
-                initial='initial'
                 animate='animateProject'
                 whileHover='hover'
                 >PROJECTS</motion.div>
                 <motion.div 
                 onClick={toContactSection}
-                className="text-sm"
+                className="text-sm w-fit cursor-pointer"
+                initial='contactInitial'
                 variants={navVariant}
-                initial='initial'
                 animate='animateContact'
                 whileHover='hover'
                 >CONTACT</motion.div>
              </nav>   
-             <div className="flex items-center gap-4 my-16">
+             <div className="flex items-center gap-4 my-16 w-fit mx-auto md:ml-0">
                 <a href="https://www.twitter.com/amewuholali" 
                 target="_blank">
                 <motion.i style={pureColors} 
@@ -156,66 +163,40 @@ export default function MainContent() {
                 <motion.i style={pureColors} class="fa-brands fa-github text-[20px]"></motion.i>
                 </a>
                 </div>
-                <motion.span 
-                className=""
-                 style={{backgrondColor: toAurora? 'white':'#011926'}}
-                 transition={{duration: '1s'}}
-                 >
-                    <motion.i style={{color: toAurora? 'white' : '#245c69', backgroundColor: toAurora? 'transparent' : '#00e980'}}
-                    class= {darkMode? "fa-solid fa-sun" : "fa-solid fa-moon"} onClick={() => {
-                        setToAurora(false)
-                        setDarkMode(prev => !prev)}}
-                    whileTap={{rotate: -180}}
-                    ></motion.i>
-                    <motion.i 
-                    style={{backgroundColor: toAurora? 'white' : '' }}
-                    onClick={() => { 
-                        setToAurora(prev => !prev)
-                    }}
-                    class="fa-solid fa-fire-flame-curved"></motion.i>
-                </motion.span>
-                <span className=""
-                style={{color: toAurora? '#00e980' : darkMode? 'white' : 'black'}}
-                >{toAurora? 'aurora' : darkMode?  'charcoal dark' : 'kanea'}</span>
+                <ThemeSwitch 
+                pureColors={pureColors}
+                darkMode={darkMode}
+                setDarkMode={setDarkMode}
+                toAurora={toAurora}
+                setToAurora={setToAurora}
+                />
              </div>
             </div>
 
 
             <div id="right-pane" 
             style={fadedText}
-            className="w-[45%] pr-14 py-14"
+            className="md:w-[53vw] w-full md:py-14 "
             >
                 <About 
                 pureColors={pureColors} 
                 setView={setIsAboutInView}
                 />
-                <div className="w-[90%] mx-auto my-12" 
-                ref={ref}
+                <div 
+                ref={projectRef}
+
+                className="w-[80%]  mx-auto xs:py-4 md:py-12 " 
+                
                 >
-                    <div className="project one"  
+                    <div className=" "  
                     >
-                        <h4 className="font-bold text-[17px]" style={pureColors}>02. Projects.</h4>
+                        <h4 
+                        className="text-[16px] font-[500]" 
+                        style={pureColors}>02. Projects.</h4>
                         
-                        <span className="inline-block my-4 p-1 rounded shadow-md border shadow-grey-100" >
-                            <a
-                            href="https://github.com/holaliamewu/umo-react" target='_blank'>
-                                <motion.i 
-                                style={pureColors}
-                                class="fa-brands fa-github hover:bg-slate-300 p-2 rounded-full active:bg-white"
-                                id="fa-github"
-                                ></motion.i>
-                            </a>
-                            <a                             
-                            target="_blank"
-                            >
-                            <motion.i 
-                            style={pureColors}
-                            class="fa-solid fa-arrow-up-right-from-square hover:bg-slate-300 p-2 rounded-full focus:bg-white"
-                            id="fa-arrow-up-right-from-square"
-                            ></motion.i>
-                            </a>
-                        </span>
-                        <span className="absolute right-0 bottom-4">currently<br/> unavailable</span>
+                        
+                        <Projects pureColors={pureColors} />
+                        
                     </div>
                 </div>
                 <Contact pureColors={pureColors} darkMode={darkMode} setView={setIsContactInView}/>
