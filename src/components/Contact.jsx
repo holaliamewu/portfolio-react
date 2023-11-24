@@ -25,7 +25,7 @@ const sayHiVariant = {
 
     return(
         <div ref={ref} 
-        className='w-[90%] mx-auto text-center pt-[200px] '>
+        className='w-[90%] mx-auto text-center pt-[50px] md:pt-[100px] '>
             <h4 className="font-[500] text-[15px] py-2" 
             style={pureColors}>03. Want To Get In Touch ?</h4>
             <p className="font-[300] text-[14px]">Yes, I'm looking for a job so whether it's about it,<br/>

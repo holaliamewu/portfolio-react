@@ -107,9 +107,9 @@ export default function MainContent() {
         >
         <div id="left-pane-container" 
         style={{color: toAurora? '#000c13' : darkMode? 'white' : 'gray'}}
-        className=" h-[100dvh] md:w-[45vw] flex flex-col justify-center md:pl-[10vw]">
+        className=" md:h-[100dvh] md:w-[45vw] flex flex-col justify-center md:pl-[10vw]">
 
-        <div className=" mx-auto md:fixed">
+        <div className="md:mt-0 mx-auto md:fixed">
 
             <Header pureColors={pureColors} toAurora={toAurora} darkmode={darkMode} />
             <Navbar />
@@ -184,7 +184,7 @@ export default function MainContent() {
                 <div 
                 ref={projectRef}
 
-                className="w-[80%]  mx-auto xs:py-4 md:py-12 " 
+                className="w-[80%]  mx-auto xs:py-4 md:py-12 pb-0" 
                 
                 >
                     <div className=" "  
