@@ -14,6 +14,9 @@ export default {
       'xl': '1289px',
       '2xl': '1536px'
     },
+    fontFamily: {
+      stretched: ['Stretch Pro', 'sans-serif']
+    },
     extend: {},
   },
   plugins: [],

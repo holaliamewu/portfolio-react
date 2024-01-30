@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ChevronsUp } from 'lucide-react';
 import { motion, useScroll } from "framer-motion"
 
 export default function Rocket({pureColors}) {
@@ -19,13 +20,12 @@ export default function Rocket({pureColors}) {
 
     return(
         <div 
-        className="inline-block fixed bottom-10 right-10  p-2 rounded-full "
-        style={pureColors}>
-        <i 
         onMouseOver={showRocketTT} 
         onMouseOut={removeRocketTT}
-        class="hidden md:block fa-solid fa-rocket rotate-[315deg]" 
-        onClick={rocketGo}></i>
+        onClick={rocketGo} 
+        className="bg-red-500 fixed bottom-10 right-10  p-2 rounded-full hidden md:block"
+        style={pureColors}>
+        <ChevronsUp />
 
 
         </div>
