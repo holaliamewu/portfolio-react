@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import projects from './projectsData';
+import projects from '../resources/projectsData';
 import { Eye, Github } from 'lucide-react';
 
 export default function Projects({pureColors}) {

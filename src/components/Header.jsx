@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Header(){
 
   return(
-    <header className=' font-["Dosis"] w-fit  mt-0  text-[2em] font-[900]  md:mt-[-30px]' >
-        <h3 className='text-[#4FCDB9] xs:text-center md:text-left md:ml-[-100px] ' >holali.a</h3>
+    <header className=' font-["Dosis"] w-fit  mt-0  text-[2em] font-[900]  ' >
+        <Link to='/' className='text-[#4FCDB9] xs:text-center md:text-left  ' >holali.a</Link>
     </header>
   )
 }
