@@ -10,7 +10,7 @@ const navData = [
     {
         title: "Projects",
         key: 2,
-        link: '/projectContainer',
+        link: '/projects',
         isSpecial: false,
     },
     {

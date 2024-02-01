@@ -23,7 +23,7 @@ export default function Rocket({pureColors}) {
         onMouseOver={showRocketTT} 
         onMouseOut={removeRocketTT}
         onClick={rocketGo} 
-        className="bg-red-500 fixed bottom-10 right-10  p-2 rounded-full hidden md:block"
+        className="bg-red-500 fixed bottom-10 right-10  p-2 rounded-full hidden "
         style={pureColors}>
         <ChevronsUp />
 

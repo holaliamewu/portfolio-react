@@ -1,17 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useState } from 'react';
 import Header from './Header'
 import { NavLink } from 'react-router-dom'
 import navData from '../resources/navData'
-import { Moon, SunDim, Twitter } from 'lucide-react';
-import { ThemeContext } from '../pages/Layout';
+import { Menu, Twitter, X } from 'lucide-react';
 
 export default function Navbar() {
-
-  const [ theme, setTheme ] = useContext(ThemeContext);
-
-  function themeSwitcher() {
-    theme == 'light' ? setTheme('dark') : setTheme('light');
-  }
+  const [ seeMobileMenu, setSeeMobileMenu ] = useState(false);
 
   const linkButtons = navData.map( link => (
     <NavLink 
@@ -22,7 +16,7 @@ export default function Navbar() {
       }
         }
         }
-    className='px-[6px] py-[2px] rounded bg-[rgba(204,251,241,0.46)] 
+    className='px-[6px] xs:hidden md:block py-[2px] rounded bg-[rgba(204,251,241,0.46)] 
     text-teal-600 '
     key={ link.key} 
     to={link.link} 
@@ -35,20 +29,22 @@ export default function Navbar() {
         <Header />
         <span className='flex gap-1'>
           { linkButtons }
-          <span 
+          <a 
+          href='https://x.com/amewuholali'
+          target='_blank'
           className='flex mx-2  bg-[rgba(204,251,241,0.46)] text-teal-600 
-          justify-center items-center px-1 rounded '>
+          justify-center items-center px-1 rounded hover:bg-teal-100 '>
             <Twitter strokeWidth={1.5} size={20} />
-          </span>
+          </a>
           <span 
-          onClick={ themeSwitcher }
-          className='flex bg-[rgba(204,251,241,0.46)] text-teal-600 
-          justify-center items-center px-1 rounded '>{
-            theme == 'dark' ? <SunDim strokeWidth={2} size={22}  />
-                            :  <Moon strokeWidth={1.5} size={20} />
+          onClick={() => { setSeeMobileMenu(prev => !prev)}}
+          className='px-1 ml-1 md:hidden '>{
+            seeMobileMenu ? 
+            <X strokeWidth={1.5} size={20} /> :
+            <Menu strokeWidth={1.5} size={20} />
           }
           </span>
-        </span>
+          </span>
       </nav>
     )
 }
