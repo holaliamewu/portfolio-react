@@ -14,10 +14,10 @@ console.log(year)
                    <Heart fill="red" color="red" size={14}  /> {year}
                </span>
             <p 
-            className="  font-[300]  text-[13px] mx-auto text-center  w-fit md:w-[50%] "
-            >Designed and Built by <bold className="font-[400]">myself</bold>.
-                <span className="hidden md:inline-block"> typeface in <span className="font-[400]" >Dosis</span> &
-                <span className="font-[400]" > Lucide</span> for Icons.
+            className="  font-[400]  text-[13px] mx-auto text-center  w-fit md:w-[50%] "
+            >Designed and Built by <span className="font-[600]">myself</span> .
+                <span className="hidden md:inline-block"> Typeface in <a href="https://fonts.google.com/specimen/Dosis" target="_blank" className="font-[400]" >Dosis</a> 
+                <a href="https://lucide.dev/icons/" target="_blank" className="font-[600]" > Lucide</a> for Icons.
                 </span>
             </p>
             <div className=" xs:hidden  " >.</div>
