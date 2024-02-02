@@ -8,9 +8,9 @@ const year = date.getFullYear()
 console.log(year)
 
     return(
-        <footer className="flex md:w-[50%] xs:w-full absolute bottom-1 xs:text-center md:justify-between items-center  mx-auto py-4  ">
+        <footer className="flex md:w-[50%] xs:w-[90vw] absolute bottom-1 xs:text-center md:justify-between items-center  mx-auto py-4  ">
            <Rocket />
-           <span className="left-[25vw] flex items-center xs:hidden md:flex text-[13px] gap-1 ml-3">
+           <span className=" left-[25vw] flex items-center xs:hidden md:flex text-[13px] gap-1 ml-3">
                    <Heart fill="red" color="red" size={14}  /> {year}
                </span>
             <p 

@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import navData from '../resources/navData'
 import { Menu, Twitter, X } from 'lucide-react';
 import { SeeMenuContext } from '../pages/Layout';
+import MobileMenu from './MobileMenu';
 
 export default function Navbar() {
 
@@ -48,6 +49,7 @@ export default function Navbar() {
           }
           </span>
           </span>
+          <MobileMenu />
       </nav>
     )
 }

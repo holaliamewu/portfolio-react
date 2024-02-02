@@ -20,7 +20,7 @@ const sayHiVariant = {
 
     return(
         <div 
-        className='w-[80%] md:w-[350px] mx-auto text-center pt-[50px] md:pt-[70px] md:mb-[60px] '>
+        className=' flex flex-col xs:mt-[50px] justify-center items-center w-[80%] md:w-[350px] mx-auto text-center pt-[50px] md:pt-[70px] md:mb-[60px] '>
             <span className="block mx-auto w-fit mb-[20px]">
                 <PhoneCall size={60} strokeWidth={0.5} />  
             </span>

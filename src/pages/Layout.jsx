@@ -10,7 +10,7 @@ export default function Layout() {
 
     return(
         <SeeMenuContext.Provider value={[seeMobileMenu, setSeeMobileMenu ]}>
-            <div className="w-screen box-border " >
+            <div className="w-full box-border " >
                 <div 
                 className=" font-['Dosis'] text-teal-700 bg-[#fff] mx-auto md:w-[50%] xs:w-[90vw] " >
                 <Navbar />
