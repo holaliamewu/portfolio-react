@@ -13,7 +13,7 @@ export default function Home() {
         
         
             <div className=" xs:mt-11 md:mt-[-50px] ">
-                <h1 className="font-[900] text-[28px] md:text-[48px] text-center md:text-left mb-0" >
+                <h1 className="font-[900] text-[28px] xs:mt-[10px] md:mt-1 md:text-[48px] text-center md:text-left mb-0" >
                     <span className="block my-[-26px] text-[50px] ">Amewu </span>Emmanuel Mensah.
                 </h1>
                 <h1 

@@ -45,7 +45,7 @@ const sayHiVariant = {
                 </a>
                 <a 
                 className=" p-1 bg-teal-50 hover:bg-teal-100 rounded-md " 
-                href="" 
+                href="https://x.com/amewuholali/" 
                 target="_blank" >
                     <Twitter strokeWidth={1} />
                 </a>
