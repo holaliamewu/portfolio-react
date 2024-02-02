@@ -51,7 +51,7 @@ const sayHiVariant = {
                 </a>
                 <a 
                 className=" p-1 bg-teal-50 hover:bg-teal-100 rounded-md " 
-                href="https://wwww.github.com/amewuholali" 
+                href="https://www.github.com/holaliamewu" 
                 target="_blank" >
                     <Github strokeWidth={1} />
                 </a>
