@@ -29,7 +29,7 @@ export default function About() {
                 I think I have some passion for content creating too. I'll definitely hop on it some point in my career.</p>
         </div>
         <a 
-        href="/my-resume.pdf" 
+        href="../public/my-resume.pdf" 
         download
         className='w-fit tracking-wider px-4 py-2 rounded-md cursor-pointer mt-10 hover:bg-teal-800 active:bg-teal-600 bg-teal-600 
         text-white flex items-center font-[500] text-[14px]  '  >
