@@ -5,7 +5,7 @@ export default function About() {
     const [ showDownloadMessage, setShowDownloadMessage ] = useState(false);
     return(
         <div className=' mx-auto pb-[50px] pt-[10px]  text-[16px]' >
-            { showDownloadMessage && <h4 className='flex gap-2 w-fit px-4 py-3 rounded-md bg-white text-[#0A1928] mx-auto text-[14px] shadow-xl fixed top-5 left-[33%]' > 
+            { showDownloadMessage && <h4 className='flex gap-2 w-fit px-4 py-3 rounded-md bg-white text-[#0A1928] mx-auto text-[14px] shadow-xl fixed top-5 xs:left-[10%] md:left-[33%]' > 
             <span> 
                 <AlertTriangle color= 'green'/>
             </span> 
@@ -31,7 +31,8 @@ export default function About() {
         <a 
         href="/my-resume.pdf" 
         download
-        className='w-fit tracking-wider px-4 py-2 rounded-md cursor-pointer mt-10 hover:bg-teal-800 active:bg-teal-600 bg-teal-600 text-white flex items-center font-[500] text-[14px]  '  >
+        className='w-fit tracking-wider px-4 py-2 rounded-md cursor-pointer mt-10 hover:bg-teal-800 active:bg-teal-600 bg-teal-600 
+        text-white flex items-center font-[500] text-[14px]  '  >
             <h4  
             className=' origin-left inline-block '
             onClick={() => {
