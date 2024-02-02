@@ -2,7 +2,6 @@ import { useState, useEffect, useContext }  from "react";
 import { NavLink } from "react-router-dom";
 import Footer from "../components/Footer.jsx";
 import QuickAboout from "../components/QuickAbout.jsx";
-import navData from "../resources/navData.jsx";
 
 export default function Home() {
 
@@ -13,7 +12,7 @@ export default function Home() {
 
         
         
-            <div className=" xs:mt-11 md:mt-[-100px] ">
+            <div className=" xs:mt-11 md:mt-[-50px] ">
                 <h1 className="font-[900] text-[28px] md:text-[48px] text-center md:text-left mb-0" >
                     <span className="block my-[-26px] text-[50px] ">Amewu </span>Emmanuel Mensah.
                 </h1>
