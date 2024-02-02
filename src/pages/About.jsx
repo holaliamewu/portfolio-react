@@ -25,7 +25,7 @@ export default function About() {
                 I'm currently pursuing a degree in computer Science at the Ghana Communication Technology University.</p><br/>
                 <p className='text-[15px] tracking-wider font-[400] leading-[1.8] text-justify hyphens-auto'> I effortlessly love 
                 to build optimized and interactive web applications with readable and 
-                maintainable code. When I don't have my hands on the keyboard I go to new places and I love watching soccer too.
+                maintainable code. When I don't have my hands on the keyboard, I'm definitely reading, watching soccer or the Sidemen.
                 I think I have some passion for content creating too. I'll definitely hop on it some point in my career.</p>
         </div>
         <a 
