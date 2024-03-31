@@ -14,10 +14,10 @@ export default function Home() {
         
             <div className=" xs:mt-11 md:mt-[-50px] ">
                 <h1 className="font-[900] text-[28px] xs:mt-[10px] md:mt-1 md:text-[48px] text-center md:text-left mb-0" >
-                    <span className="block my-[-26px] text-[50px] ">Amewu </span>Emmanuel Mensah.
+                    <span className="block my-[-28px] text-[50px] ">Amewu </span>Emmanuel Mensah.
                 </h1>
                 <h1 
-                className="md:font-[700] font-[500] text-center md:text-left md:text-[18px]  mb-[40px]"
+                className="md:font-[800] font-[600] text-center md:text-left md:text-[19px]  mb-[40px]"
                  >Front—End Dev.</h1>
             </div>
             <QuickAboout />
