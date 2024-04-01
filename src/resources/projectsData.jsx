@@ -5,12 +5,18 @@ const projects = [
     {
         title: 'Wokoma',
         id: 1,
-        projectImg: img1,
         shortDescription: 'An events-tracking and to-do app - all in one',
-        fullDescription: 
-        "Wokoma - which means 'cozy' in .... - is a productivity-driven app that serves the purpose of notes-taking and events-tracking. It's more of a To-do cum event-tracking app. The Teck stack used was carefully selected to solve a particular issue: React Router to skip reloads demanded by anchor tags ( <a> ) to allow for smooth surfing and Tailwindcss, for it's utility first property",
         techStackUsed: ['React.Js','React Router', 'TailwindCSS'],
         status: 'In progress',
+        siteLink: "",
+        githubLink: "https://github.com/holaliamewu/wokoma"
+    },
+    {
+        title: "PrimeBuild company's site",
+        id: 2,
+        shortDescription: 'The official website for PrimeBuild Engineering and Construction Limited',
+        techStackUsed: ['React.Js','React Router', 'TailwindCSS'],
+        status: 'Almost done',
         siteLink: "",
         githubLink: "https://github.com/holaliamewu/wokoma"
     }

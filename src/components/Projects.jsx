@@ -12,11 +12,7 @@ export default function Projects({pureColors}) {
             className="group flex md:flex-row relative flex-col justify-center border-[1px] border-teal-300 gap-[20px] my-[35px] p-8  rounded  md:w-[90%] w-[80vw] h-fit  mx-auto bg-teal-50" >
             <span className=' max-w-[100px] py-1 bg-teal-200 font-semibold px-[7px] absolute top-[-10px] left-[-7px] rounded-md  '
             id='img--container'>{project.status}</span>    
-            <img  
-                className = 'rounded md:w-[45%] w-full border-[1px]  ' 
-                src = {project.projectImg}
-                alt = "project image" 
-                />  
+           
                 
                 <div className = '' >
                     <span className='flex justify-between '>
