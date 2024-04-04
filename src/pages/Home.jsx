@@ -23,8 +23,8 @@ export default function Home() {
             className='font-[700] mt-[50px] xs:w-[100%] mx-auto md:text-[22px] xs:text-[19px] py-2 text-cente md:text-left'
             >Writings</h4>
             <span className="flex justify-between md:w-[70%] text-[15px] xs:w-[90%] border-b p-1 xs:mx-auto md:mx-0 " >
-                <NavLink to='' className="font-[500] hover:underline " > ~ Coding is not Hard: They lied and here's why.</NavLink> 
-                <h6 className="font-[500] text-[13.5px] underline ">1 April, 2024.</h6>  
+                <NavLink to='/blog/coding-is-not-hard/' className="font-[500] hover:underline " > ~ Coding is not Hard: They lied and here's why.</NavLink> 
+                <h6 className="font-[500] text-[13.5px] underline ">2 April, 2024.</h6>  
             </span>
             <span className="flex justify-between md:w-[70%] text-[15px] p-1 xs:w-[90%] xs:mx-auto md:mx-0 " >
                 <NavLink to='' className="font-[500] hover:underline " > ~ Demystefying React Context APIs.</NavLink> 
