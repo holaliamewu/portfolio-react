@@ -4,7 +4,7 @@ import { HardHat } from "lucide-react";
 
 export default function ProjectContainer () {
     return(
-        <div className="w-[90%] mx-auto " >
+        <div className="w-[90%] mx-auto grid " >
             <span className="flex justify-center mt-[50px] mb-[50px] " >
                 <HardHat size={60} strokeWidth={0.5} />
             </span>

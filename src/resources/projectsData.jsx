@@ -5,7 +5,7 @@ const projects = [
     {
         title: 'Wokoma',
         id: 1,
-        shortDescription: 'An events-tracking and to-do app - all in one',
+        description: 'An events-tracking and to-do app - all in one',
         techStackUsed: ['React.Js','React Router', 'TailwindCSS'],
         status: 'In progress',
         siteLink: "",
@@ -14,7 +14,7 @@ const projects = [
     {
         title: "PrimeBuild company's site",
         id: 2,
-        shortDescription: 'The official website for PrimeBuild Engineering and Construction Limited',
+        description: 'The official website for PrimeBuild Engineering and Construction Limited',
         techStackUsed: ['React.Js','React Router', 'TailwindCSS'],
         status: 'Almost done',
         siteLink: "",
