@@ -1,4 +1,5 @@
 import { CalendarDays } from 'lucide-react';
+import Giscus from '@giscus/react';
 import React from 'react';
 
 export default function BlogOne() {
@@ -55,6 +56,21 @@ export default function BlogOne() {
         tech — take time to grasp the basics well, and I promise you'll find coding to be at least 'not hard,' even if it's not easy.
         </p>
         <h3 className='p-3 border rounded-lg font-[600] mt-4 mb-12' >TL;DR: A good foundation in Coding is real game-changer if you want to easy and fun. </h3>
-              </div>
+        <Giscus
+          id="comments"
+          repo="holaliamewu/portfolio-react"
+          repoId="MDEwOlJlcG9zaXRvcnkzOTEzMTMwMjA="
+          category="Announcements"
+          categoryId="DIC_kwDOF1L2fM4B-hVS"
+          mapping="specific"
+          term="Welcome to @giscus/react component!"
+          reactionsEnabled="1"
+          emitMetadata="0"
+          inputPosition="top"
+          theme="light"
+          lang="en"
+          loading="lazy"
+    />     
+        </div>
     )
 }
