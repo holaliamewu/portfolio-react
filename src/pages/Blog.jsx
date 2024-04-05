@@ -8,7 +8,7 @@ export default function Blog() {
           <h4 className="mb-8 flex items-center gap-1" ><Lollipop size={20} />Bienvenue to where i share my voice.</h4>
           <span className="flex flex-col justify-between md:w-[70%] text-[15px] xs:w-[90%] border-b p-1 xs:mx-auto md:mx-0 " >
           <NavLink to='/blog/coding-is-not-hard/' className="hover:underline text-2xl font-bold " > ~ Coding is not Hard: They lied and here's why.</NavLink> 
-          <h6 className="font-[500] text-[13.5px] underline ">2 April, 2024.</h6>
+          <h6 className="font-[500] text-[13.5px] underline ">5 April, 2024.</h6>
           <h4 className="text-sm my-3" > I’m sure you’ve heard the cliché before: 'Coding is hard.' Almost every senior developer 
           I know says this at least once when giving advice to a newbie on breaking into tech and 
           landing their first job. While there's a grain of truth in this cliché...</h4>  

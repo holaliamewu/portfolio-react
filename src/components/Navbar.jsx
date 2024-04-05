@@ -15,11 +15,11 @@ export default function Navbar() {
     style={ 
       ({ isActive }) => {
       return {
-        backgroundColor: isActive ? '#99f6e4' : 'rgba(204,251,241,0.46)',
-        fontWeight: isActive ? '500' : '400',
+        backgroundColor: isActive ? '#D9FCF5' : 'rgba(204,251,241,0.46)',
+        border: isActive ? '1px solid' : '0'
       }}
         }
-    className='px-[6px] xs:hidden md:block py-[2px] rounded  
+    className='px-[6px] xs:hidden md:block py-[2px] rounded font-[500]  
     text-teal-600 '
     key={ link.key} 
     to={link.link} 

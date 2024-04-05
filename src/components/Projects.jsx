@@ -1,43 +1,20 @@
 import React, { useState } from 'react';
 import projects from '../resources/projectsData';
-import { Eye, Github } from 'lucide-react';
+import { Eye, Github, Globe } from 'lucide-react';
 
 export default function Projects({pureColors}) {
  
     console.log(projects)
     return (
-        projects.map(project => (
-
-            <span 
-            className="group flex md:flex-row relative flex-col justify-center border-[1px] border-teal-300 gap-[20px] my-[35px] p-8  rounded  md:w-[90%] w-[80vw] h-fit  mx-auto bg-teal-50" >
-            <span className=' max-w-[100px] py-1 bg-teal-200 font-semibold text-sm px-[7px] absolute top-[-10px] left-[-7px] rounded-md  '
-            id='img--container'>{project.status}</span>    
-           
-                
-                <div className = '' >
-                    <span className='flex justify-between '>
-                        <h1 className='text-[17px] text-teal-400 font-[700]' >{project.title} </h1>
-                        <span className='group-hover:visible md:invisible'>
-                            <a 
-                            href={project.siteLink}
-                            target='_blank'
-                            className='cursor-pointer inline-block px-1'>
-                                <Eye strokeWidth={1.5} size={20} />
-                            </a>
-                            <a 
-                            href={project.githubLink}
-                            target='_blank'
-                            className='cursor-pointer inline-block px-1'>
-                                <Github strokeWidth={1.5} size={20} />
-                            </a>
-                        </span>
+        projects.map(project => (           
+                <div className = 'xs:w-[100%] border border-teal-200 bg-teal-50 md:w-[90%] mx-auto rounded mr-1 min-w-[120px] h-fit flex flex-col p-3' >
+                    <h1 className='text-[14px] text-teal-800 font-bold my-0  ' >{project.title} </h1>
+                    <p className='text-[12px] font-["Inter"] font-[400] leading-tight my-2 ' >{project.description}</p>
+                    <span className='flex gap-1 text-[12px] font-semibold bg-teal-100 px-2 py-1 rounded-full w-fit items-center' >
+                        <Globe size={13} strokeWidth={2} />
+                        <a className=' ' href='' >{project.siteLink}</a>
                     </span>
-                    <p className='text-[16px] font-[400] my-5' >{project.description}</p>
-                    <ul>
-                        {project.techStackUsed.map(stack => <li className='inline-block mr-2 text-[10px] px-2 my-1 py-1 text-[teal] bg-teal-100 rounded font-[600]' >{stack}</li>)}
-                    </ul>
                 </div>
-            </span>
         ))
         )
 }

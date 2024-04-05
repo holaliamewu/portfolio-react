@@ -6,21 +6,18 @@ const projects = [
         title: 'Wokoma',
         id: 1,
         description: 'An events-tracking and to-do app - all in one',
-        techStackUsed: ['React.Js','React Router', 'TailwindCSS'],
         status: 'In progress',
-        siteLink: "",
-        githubLink: "https://github.com/holaliamewu/wokoma"
+        siteLink: "https://wokoma.com",
+        githubLink: null
     },
     {
-        title: "PrimeBuild company's site",
+        title: "PrimeBuild's site",
         id: 2,
         description: 'The official website for PrimeBuild Engineering and Construction Limited',
-        techStackUsed: ['React.Js','React Router', 'TailwindCSS'],
         status: 'Almost done',
-        siteLink: "",
-        githubLink: "https://github.com/holaliamewu/wokoma"
+        siteLink: "https://primebuild.com",
+        githubLink: null
     }
 ]
-
 
 export default projects;
