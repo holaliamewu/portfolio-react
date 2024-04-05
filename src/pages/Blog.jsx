@@ -10,11 +10,10 @@ export default function Blog() {
           <NavLink to='/blog/coding-is-not-hard/' className="hover:underline text-2xl font-bold " > ~ Coding is not Hard: They lied and here's why.</NavLink> 
           <h6 className="font-[500] text-[13.5px] underline ">5 April, 2024.</h6>
           <h4 className="text-[15px] my-3" > I’m sure you’ve heard the cliché before: 'Coding is hard.' Almost every senior developer 
-          I know says this at least once when giving advice to a newbie on breaking into tech and 
-          landing their first job. While there's a grain of truth in this cliché...</h4>  
+          I know says this at least once when giving advice to a newbie on breaking into tech. While there's a grain of truth in this cliché...</h4>  
       </span>
       <span className="flex flex-col justify-between md:w-[70%] text-[15px] p-1 xs:w-[90%] xs:mx-auto md:mx-0 " >
-          <NavLink to='' className="font-bold hover:underline text-lg" > ~ Demystefying React Context APIs.</NavLink> 
+          <NavLink to='' className="font-bold hover:underline text-lg" > ~ Demystifying React Context APIs.</NavLink> 
           <h6 className="font-[500] text-[13.5px] underline ">In a bit.</h6>  
           <h4 className="text-sm my-3" >Coming Soon...</h4>  
       </span>
