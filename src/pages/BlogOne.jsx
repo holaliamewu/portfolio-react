@@ -6,7 +6,8 @@ export default function BlogOne() {
       <div className='' >
         <h1 className=" text-3xl font-bold mt-8 mb-1" >CODING IS NOT HARD – THEY LIED AND THIS IS WHY.</h1>
         <h4 className='flex items-center text-[14px] gap-1 mb-8' > <CalendarDays size={18} /> 5 April, 2024.</h4>
-          <h3 className='p-3 border rounded-lg font-[600] mt-4 mb-12' >TL;DR: A good foundation in Coding is real game-changer if you want to easy and fun. </h3>
+          <h3 className='p-3 border rounded-lg font-[600] mt-4 mb-12'>
+          TL;DR: A good foundation in Coding is real8 game-changer if you want to an easy and fun ride. </h3>
         <p className='text-justify text-[18px]' >
         I’m sure you’ve heard the cliché before: 'Coding is hard.' Almost every senior developer 
         I know says this at least once when giving advice to a newbie on breaking into tech and 
