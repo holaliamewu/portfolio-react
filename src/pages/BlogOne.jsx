@@ -8,7 +8,7 @@ export default function BlogOne() {
         <h1 className=" text-3xl font-bold mt-8 mb-1" >CODING IS NOT HARD: THEY LIED AND THIS IS WHY.</h1>
         <h4 className='flex items-center text-[14px] gap-1 mb-8' > <CalendarDays size={18} /> 5 April, 2024.</h4>
           <h3 className='p-3 border rounded-lg font-[600] mt-4 mb-12'>
-          TL;DR: A good foundation in Coding is real game-changer if you want an easy and a fun ride. </h3>
+          TL;DR: A good foundation in Coding is a real game-changer if you want an easy and a fun ride. </h3>
         <p className='text-justify text-[18px]' >
         I’m sure you’ve heard the cliché before: 'Coding is hard.' Almost every senior developer 
         I know says this at least once when giving advice to a newbie on how they can break into tech. 
@@ -55,7 +55,7 @@ export default function BlogOne() {
         concepts that follow basic ones. If you're learning how to code — in any language, framework, or any other skill outside 
         tech — take time to grasp the basics well, and I promise you'll find coding to be at least 'not hard,' even if it's not easy.
         </p>
-        <h3 className='p-3 border rounded-lg font-[600] mt-4 mb-12' >TL;DR: A good foundation in Coding is real game-changer if you want to easy and fun. </h3>
+        <h3 className='p-3 border rounded-lg font-[600] mt-4 mb-12' >  TL;DR: A good foundation in Coding is a real game-changer if you want an easy and a fun ride. </h3>
         <Giscus
           id="comments"
           repo="holaliamewu/portfolio-react"
