@@ -33,7 +33,7 @@ export default function Navbar() {
         <span className='flex gap-1'>
           { linkButtons }
           <a 
-          href='https://x.com/amewuholali'
+          href='https://x.com/amewuholali_'
           target='_blank'
           className='flex mx-2  bg-[rgba(204,251,241,0.46)] text-teal-600 
           justify-center items-center px-1 rounded hover:bg-teal-100 '>
