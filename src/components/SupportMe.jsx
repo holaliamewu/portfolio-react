@@ -4,7 +4,7 @@ import { BadgeCent } from 'lucide-react';
 export default function SupportMe() {
     return (
         <a 
-        href='buymeacoffee.com/amewuholali3007' 
+        href='https://buymeacoffee.com/amewuholali3007' 
         target='_blank'
         className='fixed bottom-10 xs:right-3 md:right-10' >
             <BadgeCent 
