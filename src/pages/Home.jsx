@@ -10,9 +10,6 @@ export default function Home() {
        
         <div
         className=" w-full md:h-[90vh] flex flex-col justify-center  ">
-
-        
-        
             <div className=" xs:mt-11 md:mt-[50px] ">
                 <h1 className="font-[900] md:text-left text-[28px] xs:mt-[10px] md:mt-1 md:text-[28px] text-center  mb-0" >Amewu Emmanuel Mensah. </h1>
                 <h1 

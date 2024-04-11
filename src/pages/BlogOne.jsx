@@ -1,10 +1,12 @@
 import { CalendarDays } from 'lucide-react';
 import Giscus from '@giscus/react';
 import React from 'react';
+import SupportMe from '../components/SupportMe'
 
 export default function BlogOne() {
     return(
       <div className='' >
+        <SupportMe />
         <h1 className=" text-3xl font-bold mt-8 mb-1" >CODING IS NOT HARD: THEY LIED AND THIS IS WHY.</h1>
         <h4 className='flex items-center text-[14px] gap-1 mb-8' > <CalendarDays size={18} /> 5 April, 2024.</h4>
           <h3 className='p-3 border rounded-lg font-[600] mt-4 mb-12'>
