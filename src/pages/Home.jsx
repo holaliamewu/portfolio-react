@@ -22,7 +22,7 @@ export default function Home() {
             >Writings</h4>
           { blog.map( blogpost => {
             return(
-                <span className="flex justify-between md:w-[70%] text-[15px] xs:w-[90%] border-b p-1 xs:mx-auto md:mx-0 " >
+                <span className="flex justify-between lg:w-[70%] text-[15px] xs:w-[90%] border-b p-1 xs:mx-auto md:mx-0 " >
                      <NavLink to={`blog${blogpost.link}`} className="font-[500] hover:underline " > ~ {blogpost.title}</NavLink> 
                      <h6 className="font-[500] text-[13.5px] underline text-right">{blogpost.releaseDate}</h6>  
                  </span>

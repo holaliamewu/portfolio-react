@@ -11,11 +11,6 @@ export default function ProjectContainer () {
             <h4 
                 className='font-[700] text-[17px] xs:text-[19px] py-2 text-center md:text-left'
                   >Projects.</h4>
-                  <span className="" >
-                    <span className="" ></span>
-                    <span className="" ></span>
-                    <span className="" ></span>
-                  </span>
                   <span className="grid xs:grid-cols-2 md:grid-cols-3 gap-2 " >
                     <Projects />
                 </span>
