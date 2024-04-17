@@ -16,11 +16,11 @@ export default function App() {
   return(
         <BrowserRouter >
           <Routes >
-            <Route to='/'  element={ <Layout /> } >
+            <Route path='/'  element={ <Layout /> } >
               <Route index element={ <Home />} />
               <Route path='/about' element={ <About /> } />
               <Route path='/projects' element={ <ProjectContainer /> } />
-              <Route path='contact' element={ <Contact /> } />
+              <Route path='/contact' element={ <Contact /> } />
               <Route path='/blog' element={ <Blog /> } />
               <Route path='/blog/coding-is-not-hard' element={ <BlogOne /> } />
             </Route>
