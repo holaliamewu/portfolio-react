@@ -18,11 +18,11 @@ export default function App() {
           <Routes >
             <Route to='/'  element={ <Layout /> } >
               <Route index element={ <Home />} />
-              <Route path='about' element={ <About /> } />
-              <Route path='projects' element={ <ProjectContainer /> } />
+              <Route path='/about' element={ <About /> } />
+              <Route path='/projects' element={ <ProjectContainer /> } />
               <Route path='contact' element={ <Contact /> } />
-              <Route path='blog' element={ <Blog /> } />
-              <Route path='blog/coding-is-not-hard' element={ <BlogOne /> } />
+              <Route path='/blog' element={ <Blog /> } />
+              <Route path='/blog/coding-is-not-hard' element={ <BlogOne /> } />
             </Route>
           </Routes>
         </BrowserRouter>
