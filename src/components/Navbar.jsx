@@ -28,9 +28,11 @@ export default function Navbar() {
         </span>
 
         <span className='flex' >
-          <span className='' >
-          <SunDim strokeWidth={1.5} />
-          </span>
+        <a 
+        href="https://x.com/amewuholali_/" 
+        target="_blank" >
+           <Twitter strokeWidth={1.3} size={18} />
+        </a>
           <span 
             onClick={() => { setSeeMobileMenu(prev => !prev)}}
             className='p-1 ml-1 md:hidden rounded '>{

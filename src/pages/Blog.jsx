@@ -5,7 +5,7 @@ import { Lollipop } from "lucide-react";
 export default function Blog() {
     return (
         <div className="flex flex-col items-center mt-12 min-h-[80vh] ">
-          <h4 className="mb-8 flex items-center text-[13px] gap-1" ><Lollipop size={20} />Bienvenue to where i share my voice.</h4>
+          <h4 className="mb-8 flex items-center text-[13px] gap-1" ><Lollipop size={20} color="gray" />Bienvenue to where i share my voice.</h4>
           <span className="flex flex-col justify-between md:w-[100%] text-[15px] xs:w-[90%] border-b p-1 xs:mx-auto md:mx-0 " >
           <NavLink to='/blog/coding-is-not-hard/' 
           className=" text-xl font-bold " > Coding is not Hard: They lied and here's why.</NavLink> 

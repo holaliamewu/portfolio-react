@@ -2,23 +2,14 @@ import { useState } from 'react';
 import { AlertTriangle, BookHeart, Download } from 'lucide-react'
 
 export default function About() {
-    const [ showDownloadMessage, setShowDownloadMessage ] = useState(false);
     return(
         <div className=' mx-auto pb-[50px] pt-[10px]  text-[16px]' >
-            { showDownloadMessage && 
-                <h4 
-                className='flex gap-2 w-fit px-4 py-3 rounded-md bg-white text-[#0A1928] mx-auto text-[14px] shadow-xl fixed top-5 xs:left-[10%] md:left-[33%]' > 
-            <span> 
-                <AlertTriangle color= 'green'/>
-            </span> 
-            Great! Now check your downloads for the Resume. </h4>}
-           <span className='block mx-auto w-fit mt-[60px] mb-[40px] '> 
-                <BookHeart size={60} strokeWidth={0.5} /> 
-           </span>
             <div className='font-[300] ' >
-                <h4 
-                className='font-[700] md:text-[18px] xs:text-[19px] mb-8 text-center md:text-left'
-                  >Bits About Myself.</h4>
+            <h4 
+            className='flex gap-1 items-center font-[700] md:text-[18px] xs:text-[19px] mb-8 text-center md:text-left mt-[100px]'
+            >
+                <BookHeart size={20} strokeWidth={1} color='gray' /> 
+                  Bits About Myself.</h4>
                 <p className='text-[13px] tracking-wider leading-[1.8] font-[400] text-justify hyphens-auto md:w-[80%]'
                 >Akwaaba! [ means Welcome in <span className='italic ' >Twi</span> ]. I'm Holali, a software eng with a growing eye for aesthetics.
                 I recently graduated from <a className='font-[600] hover:underline' 
@@ -44,7 +35,7 @@ export default function About() {
                     setShowDownloadMessage(false);
                 }, 5000);
             }}
-            >Download My Résumé</h4>
+            >View my Résumé</h4>
             <span 
             className=" ml-2 "> 
                 <Download size={13} />

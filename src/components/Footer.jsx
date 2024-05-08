@@ -18,11 +18,6 @@ console.log(year)
                 <Mail strokeWidth={1.3} size={18} />
              </a>
              <a 
-             href="https://x.com/amewuholali_/" 
-             target="_blank" >
-                <Twitter strokeWidth={1.3} size={18} />
-             </a>
-             <a 
              href="https://instagram.com/amewu.holali" 
              target="_blank" >
                 <Instagram strokeWidth={1.3} size={18} />

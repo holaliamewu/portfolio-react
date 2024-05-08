@@ -13,7 +13,7 @@ export default function MobileMenu() {
                     return {
                         color: isActive ? '#222' : 'gray'
                     }}}
-                    className='px-[20px] font-[500] text-[11px] text-center py-1 inline-block w-full '
+                    className='px-[30px] font-[500] text-[12px] text-center py-3 inline-block w-full '
                     key={ link.key} 
                     to={link.link} 
                     > {link.title} </NavLink> 
