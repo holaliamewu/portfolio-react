@@ -11,20 +11,20 @@ export default function MobileMenu() {
                 style={ 
                 ({ isActive }) => {
                     return {
-                        backgroundColor: isActive ? '#99f6e4' : 'rgba(204,251,241,0.46)',
+                        color: isActive ? '#222' : 'gray'
                     }}}
-                    className='px-[6px] font-[700] text-center py-2 text-teal-600 inline-block w-full '
+                    className='px-[20px] font-[500] text-[11px] text-center py-1 inline-block w-full '
                     key={ link.key} 
                     to={link.link} 
                     > {link.title} </NavLink> 
-                    < hr className=" bg-teal-800 w-[90%] mx-auto " />
+                    < hr className="  w-[90%] mx-auto " />
                 </div>
       ))
 
     return(
         <>
         { seeMobileMenu && <div 
-            className=" absolute backdrop-blur top-12 w-[30vw] rounded-md right-7 " >
+            className=" absolute bg-[rgba(0,0,0,0.05)] backdrop-blur top-12 rounded-md right-7 " >
             {mobileLinkButtons}
             </div>}
             </>)

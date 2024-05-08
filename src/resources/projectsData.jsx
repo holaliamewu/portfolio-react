@@ -10,14 +10,6 @@ const projects = [
         siteLink: "https://wokoma.com",
         githubLink: null
     },
-    {
-        title: "PrimeBuild's site",
-        id: 2,
-        description: 'The official website for PrimeBuild Engineering and Construction Limited',
-        status: 'Almost done',
-        siteLink: "https://primebuild.com",
-        githubLink: null
-    }
 ]
 
 export default projects;

@@ -14,14 +14,8 @@ const navData = [
         isSpecial: false,
     },
     {
-        title: "Contact",
-        key: 3,
-        link: '/contact',
-        isSpecial: false,
-    },
-    {
         title: "Blog",
-        key: 4,
+        key: 3,
         link: '/blog',
         isSpecial: false,
     },

@@ -7,18 +7,18 @@ export default function BlogOne() {
     return(
       <div className='' >
         <SupportMe />
-        <h1 className=" text-3xl font-bold mt-8 mb-1" >CODING IS NOT HARD: THEY LIED AND THIS IS WHY.</h1>
-        <h4 className='flex items-center text-[14px] gap-1 mb-8' > <CalendarDays size={18} /> 5 April, 2024.</h4>
-          <h3 className='p-3 border rounded-lg font-[600] mt-4 mb-12'>
+        <h1 className=" text-xl font-bold mt-[50px] mb-1" >CODING IS NOT HARD: THEY LIED AND THIS IS WHY.</h1>
+        <h4 className='flex items-center text-[12px] gap-1 mb-8' > <CalendarDays size={18} /> 5 April, 2024.</h4>
+          <h3 className='p-3 border rounded-lg font-[600] text-[14px] mt-4 mb-12'>
           TL;DR: A good foundation in Coding is a real game-changer if you want an easy and a fun ride. </h3>
-        <p className='text-justify text-[18px]' >
+        <p className='text-justify text-[14px]' >
         I’m sure you’ve heard the cliché before: 'Coding is hard.' Almost every senior developer 
         I know says this at least once when giving advice to a newbie on how they can break into tech. 
         While there's a grain of truth in this cliché, I beg to differ. I know you're like "what?!" but I'll say it again
          and this is article explains why. </p>
         
-        <h1 className=' text-2xl font-bold mt-8 mb-2' >The Masses' why</h1>
-        <p className='text-justify text-[18px]' >
+        <h1 className=' text-xl font-bold mt-8 mb-2' >The Masses' why</h1>
+        <p className='text-justify text-[14px]' >
         When I started coding some time ago, I was initially excited, knowing all the possibilities and superpowers
           I could unlock by enduring the challenge of learning difficult and mind-bending concepts that I was
           led to believe the computer understands. After a while, I realized the journey was getting rougher 
@@ -34,30 +34,30 @@ export default function BlogOne() {
         Learning React after JavaScript is much easier, and learning Next.js after understanding React.js is as easy 
         as saying 'PHP is…'—just by the way :) </p>
         
-        <h1 className=' text-2xl font-bold mt-8 mb-2' >The Truth</h1>
-        <p className='text-justify text-[18px]' >
+        <h1 className=' text-xl font-bold mt-8 mb-2' >The Truth</h1>
+        <p className='text-justify text-[14px]' >
         The most naked truth about learning to code is that coding is like 
         learning any other skill: get the basics right and you're good for anything that comes afterwards. Many people hear about what they can achieve,
          how lucrative it is, and how it can give its learners superhuman abilities, so they decide to get into it with the least knowledge of the basics as possible. The problem isn't 
           learning it at all costs; it's not learning it correctly! - grabbing the basics. They hear about a <span className='italic'>magician</span> tutor who promises to make 
           them break into tech in two months — three weeks in extreme cases — and secure a job the following month, so they enroll. After completing the course, they realize it was all a lie.</p>
         
-        <h1 className=' text-2xl font-bold mt-8 mb-2'>'What Do I Do' </h1> 
-        <p className='text-justify text-[18px]' >
+        <h1 className=' text-xl font-bold mt-8 mb-2'>'What Do I Do' </h1> 
+        <p className='text-justify text-[14px]' >
         I'll be very straightforward with this one: Learning to code is like building a structure — the foundation is crucial.
           If you want a stronger structure, you need to make the foundation stronger. Go deeper into that course's basics and look at how it'll treat you for the rest of your coding journey. 
         
-        <span className="block my-6 px-2 py-4 pr-6 rounded-lg text-[18px] font-semibold border-l-teal-400 border  border-l-4" >
+        <span className="block my-6 px-2 py-4 pr-6 rounded-lg text-[14px] font-semibold border-l-teal-400 border  border-l-4" >
           Bonus: Tall buildings have very deep and firm foundations. If you want to go higher in anything, you need deep roots. 
           Depth will make you stand out.
         </span>
       
-        <h1 className=' text-2xl font-bold mt-8 mb-2' >Last Gold</h1>
+        <h1 className=' text-xl font-bold mt-8 mb-2' >Last Gold</h1>
         Learning any new skill, like coding, may seem hard if the foundation isn't strong enough to accommodate advanced 
         concepts that follow basic ones. If you're learning how to code — in any language, framework, or any other skill outside 
         tech — take time to grasp the basics well, and I promise you'll find coding to be at least 'not hard,' even if it's not easy.
         </p>
-        <h3 className='p-3 border rounded-lg font-[600] mt-4 mb-12' >  TL;DR: A good foundation in Coding is a real game-changer if you want an easy and a fun ride. </h3>
+        <h3 className='p-3 border rounded-lg font-[600] text-[14px] mt-4 mb-12' >  TL;DR: A good foundation in Coding is a real game-changer if you want an easy and a fun ride. </h3>
         <Giscus
           id="comments"
           repo="holaliamewu/portfolio-react"
