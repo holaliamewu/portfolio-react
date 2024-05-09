@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { AlertTriangle, BookHeart, Download } from 'lucide-react'
+import { AlertTriangle, ArrowRight, BookHeart, Download } from 'lucide-react'
 
 export default function About() {
     return(
@@ -23,22 +23,16 @@ export default function About() {
                 I think I have some passion for content creating too. I'll definitely hop on it some point in my career.</p>
         </div>
         <a 
-        href="../public/my-resume.pdf" 
-        download
+        target='_blank'
+        href="https://www.canva.com/design/DAF5xEI6U-k/fb3_M-Fm-EKhVcw8d0u6eA/view?utm_content=DAF5xEI6U-k&utm_campaign=designshare&utm_medium=link&utm_source=editor" 
         className='w-fit tracking-wider px-4 py-2 rounded-md cursor-pointer mt-10 hover:bg-teal-800 active:bg-teal-600 bg-teal-600 
         text-white flex items-center font-[500] text-[14px]  '  >
             <h4  
             className=' origin-left inline-block text-[13px] '
-            onClick={() => {
-                setShowDownloadMessage(prev => !prev)
-                setTimeout(() => {
-                    setShowDownloadMessage(false);
-                }, 5000);
-            }}
             >View my Résumé</h4>
             <span 
             className=" ml-2 "> 
-                <Download size={13} />
+                <ArrowRight size={13} />
             </span>
           </a>
         </div>
