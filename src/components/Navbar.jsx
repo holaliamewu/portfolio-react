@@ -27,7 +27,7 @@ export default function Navbar() {
           { linkButtons }
         </span>
 
-        <span className='flex' >
+        <span className='flex items-center' >
         <a 
         href="https://x.com/amewuholali_/" 
         target="_blank" >
