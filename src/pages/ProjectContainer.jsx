@@ -10,7 +10,7 @@ export default function ProjectContainer () {
         >
                 <HardHat size={20} strokeWidth={0.5} />
                   Projects.</h4>
-                  <p className="text-[13px] text-[gray] mb-[50px]" >Stuff i worked on. </p>
+                  <p className="text-[13px] text-[gray] mb-[50px]" >stuff i worked on. </p>
                   <span className="grid xs:grid-cols-2 md:grid-cols-3 gap-2 " >
                     <Projects />
                 </span>

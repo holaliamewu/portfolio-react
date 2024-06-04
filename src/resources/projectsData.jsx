@@ -8,7 +8,8 @@ const projects = [
         description: 'An events-tracking and to-do app - all in one',
         status: 'In progress',
         siteLink: "https://wokoma.com",
-        githubLink: null
+        githubLink: null,
+        techStack: [ "react-native", "twrnc", "supabase"]
     },
 ]
 
