@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@giscus/react": "^3.0.0",
+    "@vercel/speed-insights": "^1.0.11",
     "framer-motion": "^10.12.18",
     "lucide": "^0.294.0",
     "lucide-react": "^0.294.0",
