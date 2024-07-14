@@ -1,13 +1,21 @@
 
 export const blog = [
     {
-        'title' : "Coding is not Hard: They lied and here's why.",
-        'releaseDate' : '5 April, 2024',
-        'link' : '/coding-is-not-hard/'
+        title: "''i love whatever you're doing. keep up''",
+        releaseDate: '14. 07. 24',
+        link: '/i-love-whatever-youre-doing-keep-up',
+        isRandom: true
     },
     {
-        'title' : "Demystifying React Context APIs.",
-        'releaseDate' : 'in a bit',
-        'link' : ''
+        title : "coding is not hard: they lied and here's why.",
+        releaseDate : '05. 04. 24',
+        link : '/coding-is-not-hard/',
+        isRandom: false
+    },
+    {
+        title : "demystifying react context api.",
+        releaseDate : 'in a bit',
+        link : '',
+        isRandom: false
     }
 ]

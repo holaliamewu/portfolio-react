@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import Header from './Header'
 import { NavLink } from 'react-router-dom'
 import navData from '../resources/navData'
-import { Menu, SunDim, Twitter, X } from 'lucide-react';
+import { Dot, Menu, SunDim, Twitter, X } from 'lucide-react';
 import { SeeMenuContext } from '../pages/Layout';
 import MobileMenu from './MobileMenu';
 
@@ -12,10 +12,10 @@ export default function Navbar() {
 
   const linkButtons = navData.map( link => (
     <NavLink
-    className='px-[8px] xs:hidden text-[gray] hover:text-[#222] md:block py-[2px] font-[500] text-[13px]   '
+    className='px-[8px] xs:hidden text-[gray] hover:text-[#222] md:block py-[2px] font-[500] text-[13px] relative    '
     key={ link.key} 
     to={link.link} 
-    > {link.title} </NavLink> 
+    > {link.title} { link.isSpecial && <Dot color='orange' size={50} className='absolute -right-5 -top-5' />} </NavLink> 
   ))
 
     return ( 
