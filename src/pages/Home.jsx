@@ -20,7 +20,7 @@ export default function Home() {
             ><span className="hover:underline" >writings</span> and <span className="hover:underline">randoms</span>.</h4>
           { blog.map( blogpost => {
             return(
-                <span className="flex justify-between lg:w-[70%] text-[14px] xs:w-[90%] mb-3 text-[rgba(0,0,0,0.7)] hover:text-[#222] xs:mx-auto md:mx-0 " >
+                <span className="flex justify-between lg:w-[70%] text-[14px] xs:w-[100%] mb-3 text-[rgba(0,0,0,0.7)] hover:text-[#222] xs:mx-auto md:mx-0 " >
                      <NavLink to={`${ blogpost.isRandom ? 'randoms' : 'blog'}${blogpost.link}`} className="flex font-[400]  " ><Dot />  {blogpost.title}</NavLink> 
                      <h6 className="font-[400] text-[13px]  text-right">{blogpost.releaseDate}</h6>  
                  </span>
