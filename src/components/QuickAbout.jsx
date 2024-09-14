@@ -2,7 +2,7 @@ import React from "react";
 
 export default function QuickAbout() {
     return(
-        <div className=" mr-auto text-sm leading-[2] space-y-4 ">
+        <div className=" mr-auto text-sm leading-[1.5] md:leading-[2] space-y-4 ">
             <p className=" text-justify "
             >front-end software engineer. i curate aesthetically-pleasing
              stuff on the web, paying attention to accessibillity. i'm intrigued
