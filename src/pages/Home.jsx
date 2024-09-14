@@ -2,26 +2,24 @@ import React  from "react";
 import { NavLink } from "react-router-dom";
 import QuickAboout from "../components/QuickAbout.jsx";
 import { blog } from "../resources/blogData.jsx";
-import { Dot } from 'lucide-react'
 
 
 export default function Home() {
 
     return(
-        <div
-        className=" w-full h-[80vh] flex flex-col justify-center  ">
+        <div className="mx-auto w-[90vw] text-sm font-[400] leading-[2] text-zinc-500 md:w-[60vw] lg:w-[50vw] 2xl:w-[30vw] min-h-[100vh] font-['manrope'] flex flex-col mt-16  ">
             <div className=" mb-3 ">
-                <h1 className="font-[900] text-left text-[28px] md:text-[30px]  mb-0" >amewu emmanuel mensah </h1>
+                <h1 className="font-[900] text-zinc-800 text-left text-2xl  mb-0" >amewu emmanuel mensah </h1>
             </div>
             <QuickAboout />
             <h4 
-            className='font-[600] mt-[50px] xs:w-[100%] mx-auto text-md mb-4 text-cente md:text-left'
+            className='mt-[50px] xs:w-[100%] mx-auto text-md mb-4 text-zinc-900 font-semibold '
             ><span className="hover:underline" >writings</span> and <span className="hover:underline">randoms</span>.</h4>
           { blog.map( blogpost => {
             return(
-                <span key={ blogpost.link } className="flex justify-between  text-md w-[100%] mb-2 text-[rgba(0,0,0,0.7)] hover:text-[#222] mx-auto md:mx-0 " >
-                     <NavLink to={`${ blogpost.isRandom ? 'randoms' : 'blog'}${blogpost.link}`} className="flex font-[500]  " ><Dot />  {blogpost.title}</NavLink> 
-                     <h6 className="font-[500] text-md  text-right">{blogpost.releaseDate}</h6>  
+                <span key={ blogpost.link } className="flex justify-between  text-sm hover:text-zinc-800 w-[100%] mb-2 mx-auto md:mx-0 " >
+                     <NavLink to={`${ blogpost.isRandom ? 'randoms' : 'blog'}${blogpost.link}`} className=" " >{blogpost.title}</NavLink> 
+                     <h6 className="text-right">{blogpost.releaseDate}</h6>  
                  </span>
             )
           }) 

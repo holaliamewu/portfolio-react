@@ -11,11 +11,6 @@ export const blog = [
         releaseDate : '05. 04. 24',
         link : '/coding-is-not-hard/',
         isRandom: false
-    },
-    {
-        title : "demystifying react context api.",
-        releaseDate : 'in a bit',
-        link : '',
-        isRandom: false
     }
+
 ]
