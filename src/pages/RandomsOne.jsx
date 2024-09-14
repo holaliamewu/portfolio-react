@@ -1,10 +1,12 @@
 import React from 'react'
+import HomeButton from '../components/HomeButton'
 
 export default function Randoms() {
   return (
-    <div>
-        <h1 className='flex gap-1 items-center font-[900] text-xl  text-center md:text-left mt-[100px]' >"i love whatever you're doing. keep up."</h1>
-        <div className='flex flex-col gap-6 text-md mt-6 tracking-wide font-[500] leading-[1.5] text-justify hyphens-auto' >
+    <div className="mx-auto w-[90vw] max-w-[500px] text-sm font-[400] leading-[1.8] md:leading-[2] text-zinc-500 min-h-[100vh] font-['manrope'] flex flex-col md:mt-16  ">
+      <HomeButton/>
+        <h1 className='flex gap-1 items-center font-[900] text-zinc-800 text-md text-left mt-[100px]' >"i love whatever you're doing. keep up."</h1>
+        <div className='flex flex-col gap-6 text-sm leading-[1.8] md:leading-[2] md:mt-6  font-[400] leading-[1.5] text-justify hyphens-auto' >
             <p className='' >imagine your interviewer telling you this at the end of a seemingly successful interview and so you keep refreshing your mail every minute 
             to see what you think should happen in your perfect world.
             </p>

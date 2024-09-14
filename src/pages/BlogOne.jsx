@@ -1,10 +1,12 @@
 import { CalendarDays } from 'lucide-react';
 import React from 'react';
 import SupportMe from '../components/SupportMe';
+import HomeButton from '../components/HomeButton';
 
 export default function BlogOne() {
     return (
-      <div className="mx-auto w-[90vw] text-sm font-[400] leading-[1.8] md:leading-[2] text-zinc-500 md:w-[60vw] lg:w-[50vw] 2xl:w-[30vw] min-h-[100vh] font-['manrope'] flex flex-col md:mt-16  ">
+      <div className="mx-auto w-[90vw] max-w-[500px] text-sm font-[400] leading-[1.8] md:leading-[2] text-zinc-500 min-h-[100vh] font-['manrope'] flex flex-col md:mt-16  ">
+        <HomeButton />
         <SupportMe />
         <h1 className=" text-xl font-semibold text-zinc-800 mt-[50px] mb-1" >coding is not hard: they lied and this is why.</h1>
         <h4 className='flex items-center text-xs gap-1 mb-8' > <CalendarDays size={16} /> 5 april, 2024.</h4>

@@ -1,19 +1,23 @@
 import React  from "react";
 import { NavLink } from "react-router-dom";
 import QuickAboout from "../components/QuickAbout.jsx";
-import { blog } from "../resources/blogData.jsx";
+import { blog } from "../resources/blogData.js";
+import Experiences from "../components/Experiences.jsx";
+import MusicStand from "../components/MusicStand.jsx";
+import Contact from "../components/Contact.jsx";
 
 
 export default function Home() {
 
     return(
-        <div className="mx-auto w-[90vw] text-sm font-[400] leading-[1.8] md:leading-[2] text-zinc-500 md:w-[60vw] lg:w-[50vw] 2xl:w-[30vw] min-h-[100vh] font-['manrope'] flex flex-col mt-16  ">
+        <div className="mx-auto w-[90vw] max-w-[500px] text-sm font-[400] leading-[1.8] md:leading-[2] text-zinc-500 min-h-[100vh] font-['manrope'] flex flex-col md:mt-16  ">
             <div className=" mb-3 ">
                 <h1 className="font-[900] text-zinc-800 text-left text-2xl  mb-0" >amewu emmanuel mensah </h1>
             </div>
             <QuickAboout />
+            <MusicStand />
             <h4 
-            className='mt-[50px] xs:w-[100%] mx-auto text-md mb-4 text-zinc-900 font-semibold '
+            className='mt-[40px] xs:w-[100%] mx-auto text-md mb-4 text-zinc-900 font-semibold '
             ><span className="hover:underline" >writings</span> and <span className="hover:underline">randoms</span>.</h4>
           { blog.map( blogpost => {
             return(
@@ -24,6 +28,8 @@ export default function Home() {
             )
           }) 
         }
+        <Experiences />
+        <Contact />
         </div>
     )
 }
