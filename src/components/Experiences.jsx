@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Experiences() {
     return(
-        <div className=" mr-auto text-sm mt-[40px] leading-[1.8] md:leading-[2] space-y-4 ">
+        <div className=" mr-auto text-sm mt-[50px] leading-[1.8] md:leading-[2] space-y-4 ">
             <h1 className="text-zinc-800 font-bold" >experience</h1>
             <span className="" >
                 <span className="flex gap-2" >

@@ -3,7 +3,7 @@ import React from 'react';
 export default function MusicStand (){
 
     return(
-        <div className='mt-[40px] bg-zinc-100 w-full p-[5px] rounded-lg ' >
+        <div className='mt-[50px] bg-zinc-100 w-full p-[5px] rounded-lg ' >
             <span className='flex space-x-2 bg-white p-[5px] rounded-lg shadow ' >
                 <span className='flex bg-zinc-200 h-[60px] aspect-square rounded-lg shadow' >img</span>
                     <span className='flex flex-col justify-center leading-[1.5]' >

@@ -5,7 +5,7 @@ import contactData from "../resources/contactData";
 export default function Contact() {
     const contactInfo = contactData;
     return(
-        <div className=" mr-auto text-sm mt-[40px] leading-[1.8] md:leading-[2] space-y-4 ">
+        <div className=" mr-auto text-sm mt-[50px] leading-[1.8] md:leading-[2] space-y-4 ">
             <h1 className="text-zinc-800 font-bold" >get in touch</h1>
             <ul className="flex gap-2" >
                { contactInfo.map( ( contact ) => (
