@@ -7,7 +7,7 @@ import { blog } from "../resources/blogData.jsx";
 export default function Home() {
 
     return(
-        <div className="mx-auto w-[90vw] text-sm font-[400] leading-[1.5] md:leading-[2] text-zinc-500 md:w-[60vw] lg:w-[50vw] 2xl:w-[30vw] min-h-[100vh] font-['manrope'] flex flex-col mt-16  ">
+        <div className="mx-auto w-[90vw] text-sm font-[400] leading-[1.8] md:leading-[2] text-zinc-500 md:w-[60vw] lg:w-[50vw] 2xl:w-[30vw] min-h-[100vh] font-['manrope'] flex flex-col mt-16  ">
             <div className=" mb-3 ">
                 <h1 className="font-[900] text-zinc-800 text-left text-2xl  mb-0" >amewu emmanuel mensah </h1>
             </div>
