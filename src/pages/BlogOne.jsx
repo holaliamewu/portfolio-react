@@ -6,7 +6,7 @@ export default function BlogOne() {
     return (
       <div className="mx-auto w-[90vw] text-sm font-[400] leading-[1.8] md:leading-[2] text-zinc-500 md:w-[60vw] lg:w-[50vw] 2xl:w-[30vw] min-h-[100vh] font-['manrope'] flex flex-col mt-16  ">
         <SupportMe />
-        <h1 className=" text-md font-semibold text-zinc-800 mt-[50px] mb-1" >coding is not hard: they lied and this is why.</h1>
+        <h1 className=" text-xl font-semibold text-zinc-800 mt-[50px] mb-1" >coding is not hard: they lied and this is why.</h1>
         <h4 className='flex items-center text-xs gap-1 mb-8' > <CalendarDays size={16} /> 5 april, 2024.</h4>
           <h3 className='p-3 border rounded-lg text-sm text-zinc-800 font-semibold mt-4 mb-12'>
           tl;dr: a good foundation in coding is a real game-changer if you want an easy and a fun ride. </h3>
