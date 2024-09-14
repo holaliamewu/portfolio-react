@@ -1,8 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import Header from './Header'
 import { NavLink } from 'react-router-dom'
 import navData from '../resources/navData'
-import { Dot, Menu, SunDim, Twitter, X } from 'lucide-react';
+import { Dot, Menu, Twitter, X } from 'lucide-react';
 import { SeeMenuContext } from '../pages/Layout';
 import MobileMenu from './MobileMenu';
 

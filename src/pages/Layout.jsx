@@ -12,7 +12,7 @@ export default function Layout() {
         <SeeMenuContext.Provider value={[seeMobileMenu, setSeeMobileMenu ]}>
             <div className="w-full  " >
                 <div 
-                className=" font-['Inter'] text-[#222]   bg-[#fff] mx-auto md:w-[70%] lg:w-[50%] xs:w-[90vw]  " >
+                className=" font-['manrope'] text-[#222]   bg-[#fff] mx-auto w-[90vw] md:w-[60vw] lg:w-[50vw] 2xl:w-[30vw] " >
                 <Navbar />
                 <Outlet />
                 </div>

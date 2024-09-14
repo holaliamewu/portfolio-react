@@ -6,7 +6,7 @@ export default function Projects() {
     return (
         projects.map(project => (           
                 <div className = 'xs:w-[100%] relative border border-teal-200 bg-teal-50 md:w-[90%] mx-auto rounded mr-1 min-w-[180px] h-fit flex flex-col p-3 ' >
-                    <h1 className='text-[14px] font-bold my-0  ' >{project.title} </h1>
+                    <h1 className='text-[15px] font-bold my-0  ' >{project.title} </h1>
                     <span className='group xs:hidden lg:block absolute right-4 ' >
                         <Layers className='text-gray-600 group-hover:text-black transition-all' size={14} />
 
@@ -19,8 +19,8 @@ export default function Projects() {
                             </ul>
                         </span>
                         </span>
-                    <p className='text-[11.5px] font-["Inter"] text-[gray] font-[500] leading-tight my-2 ' >{project.description}</p>
-                    <span className='flex gap-1 text-[12px] cursor-not-allowed font-semibold bg-gray-200 text-gray-500 px-2 py-1 rounded-full w-fit items-center' >
+                    <p className='text-sm font-["manrope"] text-[gray] font-[500] leading-tight my-2 ' >{project.description}</p>
+                    <span className='flex gap-1 text-[13px] cursor-not-allowed font-semibold bg-gray-200 text-gray-500 px-2 py-1 rounded-full w-fit items-center' >
                         <Globe size={16} strokeWidth={1.5} />
                         <a className='cursor-not-allowed ' href='' >{project.siteLink}</a>
                     </span>

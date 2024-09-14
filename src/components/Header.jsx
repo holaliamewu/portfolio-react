@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Header(){
 
   return(
-    <header className=' font-["Dosis"] w-fit  mt-0  text-[1.5em] font-[900]  ' >
+    <header className=' font-["manrope"] w-fit  mt-0  text-lg font-[900]  ' >
         <Link to='/' className='text-[#4FCDB9] xs:text-center md:text-left  ' >holali.a</Link>
     </header>
   )
