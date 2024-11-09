@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import QuickAboout from "../components/QuickAbout.jsx";
 import { blog } from "../resources/blogData.js";
 import Experiences from "../components/Experiences.jsx";
-import MusicStand from "../components/MusicStand.jsx";
+// import MusicStand from "../components/MusicStand.jsx";
 import Contact from "../components/Contact.jsx";
 
 
@@ -15,8 +15,8 @@ export default function Home() {
                 <h1 className="font-[900] text-zinc-800 text-left text-2xl  mb-0" >amewu emmanuel mensah </h1>
             </div>
             <QuickAboout />
-            <MusicStand />
-            <h4 
+            {/* {<MusicStand />}             */}
+<h4 
             className='mt-[50px] xs:w-[100%] mx-auto text-md mb-4 text-zinc-900 font-semibold '
             ><span className="hover:underline" >writings</span> and <span className="hover:underline">randoms</span>.</h4>
           { blog.map( blogpost => {

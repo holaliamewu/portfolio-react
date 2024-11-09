@@ -1,7 +1,10 @@
 import React from 'react';
+import { getCurrentSong } from '../services/SpotifyServices';
 
 export default function MusicStand (){
 
+    const songData = getCurrentSong();
+    console.log(songData)
     return(
         <div className='mt-[50px] bg-zinc-100 w-full p-[5px] rounded-lg ' >
             <span className='flex space-x-2 bg-white p-[5px] rounded-lg shadow ' >

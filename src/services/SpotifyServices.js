@@ -1,62 +1,63 @@
-// src/spotifyAuth.js
+const client_id = 'de06a9790ac24d0d9249041c5d8a26ba';
+const client_secret = '59aba8c2c64746efa32eb766549c5fdc';
 
-const clientId = 'de06a9790ac24d0d9249041c5d8a26ba';
-const clientSecret = '59aba8c2c64746efa32eb766549c5fdc';
-const redirectUri = 'http://holalia.co.uk'; // Update this to your redirect URI
-const scopes = 'user-read-playback-state user-read-currently-playing';
+// Helper function to encode Base64 in browser
+function encodeBase64(str) {
+  return btoa(unescape(encodeURIComponent(str)));
+}
 
-const authenticationEndpoint = 'https://accounts.spotify.com/authorize';
-const tokenEndpoint = 'https://accounts.spotify.com/api/token';
-
-// Redirect user to Spotify authorization page
-export const getAuthUrl = () => {
-  return `${authenticationEndpoint}?client_id=${clientId}&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent(scopes)}`;
-};
-
-// Exchange authorization code for access token
-export const getAccessToken = async (code) => {
-  const response = await fetch(tokenEndpoint, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Basic ${btoa(`${clientId}:${clientSecret}`)}`,
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    body: new URLSearchParams({
-      grant_type: 'authorization_code',
-      code,
-      redirect_uri: redirectUri,
-    }),
-  });
-
-  if (!response.ok) {
-    throw new Error('Failed to fetch access token');
-  }
-
-  const data = await response.json();
-  return data.access_token;
-};
-
-
-const authEndpoint = 'https://api.spotify.com/v1/me/player/currently-playing';
-
-const fetchCurrentSong = async (token) => {
+async function getToken() {
   try {
-    const response = await fetch(authEndpoint, {
+    const response = await fetch('https://accounts.spotify.com/api/token', {
+      method: 'POST',
+      body: new URLSearchParams({
+        'grant_type': 'client_credentials', // This won't work for fetching user-specific data
+      }),
       headers: {
-        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Authorization': 'Basic ' + encodeBase64(client_id + ':' + client_secret),
       },
     });
 
     if (!response.ok) {
-      throw new Error('Failed to fetch current song');
+      throw new Error(`Error fetching token: ${response.statusText}`);
     }
 
-    const data = await response.json();
-    return data;
+    return await response.json();
   } catch (error) {
-    console.error('Error fetching current song:', error);
-    throw error;
+    console.error('Error:', error);
   }
-};
+}
 
-export { fetchCurrentSong };
+// Instead of Client Credentials, you need to manually generate a user access token
+async function getCurrentSong(access_token) {
+  try {
+    const response = await fetch("https://api.spotify.com/v1/me/player/currently-playing", {
+      method: 'GET',
+      headers: { 'Authorization': 'Bearer ' + access_token },
+    });
+
+    if (!response.ok) {
+      if (response.status === 204) {
+        console.log('No song currently playing.');
+      } else {
+        throw new Error(`Error fetching current song: ${response.statusText}`);
+      }
+    }
+
+    const songData = await response.json();
+    console.log(songData);
+    return songData;
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+// Replace this part with your manually generated access token
+const userAccessToken = 'YOUR_USER_ACCESS_TOKEN';
+
+getCurrentSong(userAccessToken).then(song => {
+  console.log('Current song:', song);
+});
+
+export { getCurrentSong };

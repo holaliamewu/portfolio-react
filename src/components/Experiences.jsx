@@ -9,7 +9,8 @@ export default function Experiences() {
                     <h3 className="text-zinc-800 font-semibold" >rancard</h3>
                     <h5 className="text-zinc-400" >august, 2024 -- now</h5>
                 </span>
-                <p className="" >collaborated with senior engineers to build products such as <a href='https://unify.rancard.com' target='_blank' className="border-b border-b-zinc-300 border-b-2" >unify</a></p>
+                <p className="" >collaborated with senior engineers to work on  products such as <a href='https://unify.rancard.com' target='_blank' className="border-b border-b-zinc-300 border-b-2" >unify</a> and <a href='https://diem.rancard.com' target='_blank' className="border-b border-b-zinc-300 border-b-2" >diem</a>.
+                    </p>
             </span>
         </div>
     )

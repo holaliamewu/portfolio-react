@@ -2,16 +2,20 @@
 
 const contactData = [
     {
-       type: 'x',
+       name: 'x',
        url: 'https://x.com/amewuholali_'
     },
     {
-       type: 'instagram',
-       url: 'https://instagram.com/amewu.holali'
+       name: 'youtube',
+       url: 'https://youtube.com/@ea.holali/'
     },
     {
-       type: 'youtube',
-       url: 'https://youtube.com/holali.a'
+       name: 'instagram',
+       url: 'https://instagram.com/ea.holali'
+    },
+    {
+       name: 'tiktok',
+       url: 'https://tiktok.com/@ea.holali'
     }
 ]
 
