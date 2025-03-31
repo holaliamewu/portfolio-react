@@ -7,7 +7,7 @@ export default function Experiences() {
             <span className="" >
                 <span className="flex gap-2" >
                     <h3 className="text-zinc-800 font-semibold" >rancard</h3>
-                    <h5 className="text-zinc-400" >august, 2024 -- now</h5>
+                    <h5 className="text-zinc-400" >august, 2024 -- dec, 2024</h5>
                 </span>
                 <p className="" >collaborated with senior engineers to work on  products such as <a href='https://unify.rancard.com' target='_blank' className="border-b border-b-zinc-300 border-b-2" >unify</a> and <a href='https://diem.rancard.com' target='_blank' className="border-b border-b-zinc-300 border-b-2" >diem</a>.
                     </p>

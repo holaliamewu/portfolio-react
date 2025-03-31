@@ -1,5 +1,5 @@
 
-export const blog = [
+const blog = [
     {
         title: "''i love whatever you're doing. keep up''",
         releaseDate: '14. 07. 24',
@@ -14,3 +14,5 @@ export const blog = [
     }
 
 ]
+
+export default blog;

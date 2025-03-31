@@ -5,7 +5,7 @@ import {
   Route } from "react-router-dom";
 import Home from "./Home";
 import BlogOne from "./BlogOne";
-import RandomsOne from './RandomsOne'
+import RandomsOne from './RandomsOne';
 
 
 export default function App() {

@@ -1,10 +1,13 @@
 import React  from "react";
 import { NavLink } from "react-router-dom";
-import QuickAboout from "../components/QuickAbout.jsx";
-import { blog } from "../resources/blogData.js";
-import Experiences from "../components/Experiences.jsx";
+import projects from "../resources/projectsData.js";
+import blog from "../resources/blogData.js";
+import QuickAbout from "../components/QuickAbout";
+import Experiences from "../components/Experiences";
 // import MusicStand from "../components/MusicStand.jsx";
-import Contact from "../components/Contact.jsx";
+import Contact from "../components/Contact";
+import Writings from "../components/Writings";
+import FeaturedProjects from "../components/FeaturedProjects"
 
 
 export default function Home() {
@@ -14,22 +17,12 @@ export default function Home() {
             <div className=" ">
                 <h1 className="font-[900] text-zinc-800 text-left text-2xl  mb-0" >amewu emmanuel mensah </h1>
             </div>
-            <QuickAboout />
+            <QuickAbout />
             {/* {<MusicStand />}             */}
-<h4 
-            className='mt-[50px] xs:w-[100%] mx-auto text-md mb-4 text-zinc-900 font-semibold '
-            ><span className="hover:underline" >writings</span> and <span className="hover:underline">randoms</span>.</h4>
-          { blog.map( blogpost => {
-            return(
-                <span key={ blogpost.link } className="flex justify-between  text-sm hover:text-zinc-800 w-[100%] mb-2 mx-auto md:mx-0 " >
-                     <NavLink to={`${ blogpost.isRandom ? 'randoms' : 'blog'}${blogpost.link}`} className=" " >{blogpost.title}</NavLink> 
-                     <h6 className="text-right">{blogpost.releaseDate}</h6>  
-                 </span>
-            )
-          }) 
-        }
-        <Experiences />
-        <Contact />
+            <FeaturedProjects projects={projects} />
+            <Writings blog={blog} />
+            <Experiences />
+            <Contact />
         </div>
     )
 }

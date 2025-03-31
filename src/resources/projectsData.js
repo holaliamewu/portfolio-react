@@ -1,15 +1,20 @@
-import img1 from '/public/wokoma.png';
-import img2 from '/public/umoImage.png';
 
 const projects = [
     {
-        title: 'Wokoma',
-        id: 1,
-        description: 'An events-tracking and to-do app - all in one',
-        status: 'In progress',
-        siteLink: "https://wokoma.com",
-        githubLink: null,
-        techStack: [ "react-native", "twrnc", "supabase"]
+     id: 1,
+     name: "sticko icons",
+     description: "human-like matchstick icons pack",
+     link: "https://stickoicons.holali.lol/",
+     featured: true,
+     img: "/stickoicons-tag.png"
+    },
+    {
+     id: 2,
+     name: "hacksbazaar",
+     description: "all your hacks, by other humans, in one place",
+     link: "https://hacksbazaar.vercel.app/",
+     featured: true,
+     img: "/hacksbazaar-logo.png"
     },
 ]
 
