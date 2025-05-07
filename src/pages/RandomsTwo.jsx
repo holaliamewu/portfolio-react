@@ -23,7 +23,7 @@ export default function RandomsTwo() {
                  and solve them. you're an artist because you create a piece of art everyday and not after a 
                  painting is done.
                 </p>
-            <p >aristotle beautifully captured it all when he said, <span className='italic bg-orange-50 rounded-md px-1' >"we are what we repeated do. excellence, then, is not an act but a habit".</span></p>
+            <p >aristotle beautifully captured it all when he said, <span className='italic bg-orange-50 rounded-md px-1' >"we are what we repeatedly do. excellence, then, is not an act but a habit".</span></p>
         </div>
     </div>
   )
