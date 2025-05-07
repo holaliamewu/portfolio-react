@@ -1,7 +1,7 @@
 import React from 'react'
 import HomeButton from '../components/HomeButton'
 
-export default function Randoms() {
+export default function RandomsOne() {
   return (
     <div className="mx-auto w-[90vw] max-w-[500px] text-sm font-[400] leading-[1.8] md:leading-[2] text-zinc-500 min-h-[100vh] font-['manrope'] flex flex-col md:mt-16  ">
       <HomeButton/>

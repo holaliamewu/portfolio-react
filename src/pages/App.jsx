@@ -6,6 +6,7 @@ import {
 import Home from "./Home";
 import BlogOne from "./BlogOne";
 import RandomsOne from './RandomsOne';
+import RandomsTwo from './RandomsTwo';
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
           <Routes >
               <Route path="/" element={ <Home />} />
               <Route path='/randoms/i-love-whatever-youre-doing-keep-up' element={ <RandomsOne /> } />
+              <Route path='/randoms/what-we-create-we-are' element={ <RandomsTwo /> } />
               <Route path='/blog/coding-is-not-hard' element={ <BlogOne /> } />
           </Routes>
         </BrowserRouter>
