@@ -6,7 +6,7 @@ export default function Layout() {
     return(
             <div className="w-full  " >
                 <div 
-                className=" font-['manrope'] text-[#222]   bg-[#fff]  " >
+                className=" font-['onest'] text-[#222]   bg-[#fff]  " >
                 <Outlet />
                 </div>
             </div>

@@ -1,11 +1,10 @@
 import { CalendarDays } from 'lucide-react';
-import React from 'react';
 import SupportMe from '../components/SupportMe';
 import HomeButton from '../components/HomeButton';
 
 export default function BlogOne() {
     return (
-      <div className="mx-auto w-[90vw] max-w-[500px] text-sm font-[400] leading-[1.8] md:leading-[2] text-zinc-500 min-h-[100vh] font-['manrope'] flex flex-col md:mt-16  ">
+      <div className="mx-auto w-[90vw] max-w-[500px] text-sm font-[400] leading-[1.8] md:leading-[2] text-zinc-500 min-h-[100vh] font-['onest'] flex flex-col md:mt-16  ">
         <HomeButton />
         <SupportMe />
         <h1 className=" text-xl font-semibold text-zinc-800 mt-[50px] mb-1" >coding is not hard: they lied and this is why.</h1>
