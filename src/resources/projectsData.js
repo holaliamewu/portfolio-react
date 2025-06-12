@@ -4,7 +4,7 @@ const projects = [
      id: 1,
      name: "sticko icons",
      description: "human-like matchstick icons pack",
-     link: "https://stickoicons.holali.lol/",
+     link: "https://sticko.holali.lol/",
      featured: true,
      img: "/stickoicons-tag.png"
     },
