@@ -6,10 +6,6 @@ const contactData = [
        url: 'https://x.com/amewuholali_'
     },
     {
-       name: 'youtube',
-       url: 'https://youtube.com/@ea.holali/'
-    },
-    {
        name: 'instagram',
        url: 'https://instagram.com/ea.holali'
     },
