@@ -1,7 +1,7 @@
 import React  from "react";
 import { NavLink } from "react-router-dom";
 import projects from "../resources/projectsData.js";
-import blog from "../resources/blogData.js";
+import blog from "../resources/thoughtsData.js";
 import QuickAbout from "../components/QuickAbout";
 import Experiences from "../components/Experiences";
 // import MusicStand from "../components/MusicStand.jsx";
