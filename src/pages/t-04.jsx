@@ -24,7 +24,7 @@ return (
                     This is a guy whose art will look like BS at first glance until you keep looking and intentionally immerse yourself into it. You then realise He&apos;s actually making art — channelling his anger and telling his point of view in an odd artistic form.
                 </p>
                 <p>
-                    What made Basquiat who he was his ability to ‘break the rules’  and let his ‘feelings’ or emotions take over. But this was a problem.
+                    What made Basquiat who he was was his ability to ‘break the rules’  and let his ‘feelings’ or emotions take over. But this was a problem.
                 </p>
                 <p>
                     ‘Breaking the rules’ wasn&apos;t really a problem for Basquiat since it is actually what made him the distinct graffiti artist he was. His problem was his ‘feelings’ - let&apos;s call it his emotions.
