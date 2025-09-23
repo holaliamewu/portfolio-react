@@ -12,7 +12,7 @@ export default function FeaturedProjects({projects}) {
                             <img src={project.img} className="aspect-video object-cover w-[150px] rounded-xl shadow " />
                             <NavLink to={project.link} className="flex flex-col text-left mt-4 gap-1" >
                                 <h4 className="text-zinc-800 font-[600] item-hover:underline" >{project.name}</h4>
-                                <p className="truncate-ellipsis" >{project.description}</p>
+                                <p className="truncate-ellipsis font-light text-[13px] " >{project.description}</p>
                                 </NavLink> 
                         </span>
                     ))}
