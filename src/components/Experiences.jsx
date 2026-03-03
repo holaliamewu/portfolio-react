@@ -6,10 +6,17 @@ export default function Experiences() {
             <div className="flex flex-col gap-2" >
             <span className="" >
                 <span className="flex items-end gap-1 font-light" >
-                    <h3 className="text-zinc-800 font-[600]" >isupreme labs</h3>
-                    <h5 className="text-zinc-400 text-[13px]" >march, 2025 - now</h5>
+                    <h3 className="text-zinc-800 font-[600]" >dexwin </h3>
+                    <h5 className="text-zinc-400 text-[13px]" >sep, 2025 - now</h5>
                 </span>
-                <p className="" >building some groundbreaking marketing idea with an amazing team...</p>
+                <p className="" >working alongside experienced team on some of the most impactful products in ghana (such as mtn pulse, saving grains and more)</p>
+            </span>
+            <span className="" >
+                <span className="flex items-end gap-1 font-light" >
+                    <h3 className="text-zinc-800 font-[600]" >isupreme labs</h3>
+                    <h5 className="text-zinc-400 text-[13px]" >march, 2025 - nov, 2025</h5>
+                </span>
+                <p className="" >built an marketing attribution  with an amazing team (not out yet)...</p>
             </span>
             <span className="" >
                 <span className="flex items-end gap-1 font-light" >
